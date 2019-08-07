@@ -1,0 +1,34 @@
+body {
+  background-image: url("../image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.brand {
+  font-size: 32px;
+}
+
+nav a {
+  color: #fff;
+}
+
+.lang {
+  border-right: 2px solid #fff;
+}
+
+.myNav {
+  height: 20vh;
+}
+.header {
+  position: relative;
+  height: 80vh;
+}
+
+.header a {
+  font-weight: 200;
+  border-width: 2px;
+  font-size: 16px;
+  position: absolute;
+  transform: translate(50%, 50%);
+  transform: skew(-50%);
+}
