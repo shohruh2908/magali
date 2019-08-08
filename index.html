@@ -9,6 +9,10 @@
             href="https://fonts.googleapis.com/css?family=Libre+Caslon+Text&display=swap"
             rel="stylesheet"
         />
+        <link
+            href="https://fonts.googleapis.com/css?family=Montserrat:400,600,800,900&display=swap"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="css/style.css" />
         <link
             rel="stylesheet"
@@ -57,8 +61,8 @@
                     class="header d-flex justify-content-center align-items-center "
                 >
                     <a
-                        href="#uzbekistan"
-                        class="btn btn-outline-light btn-lg px-5"
+                        href="#view-2"
+                        class="btn btn-outline-light btn-lg px-5 vs-anchor"
                     >
                         EXPLORE
                     </a>
@@ -128,19 +132,14 @@
                     useScrollbar: false
                 });
 
-                $('#scroll').on(
-                    'click',
-                    function() {
-                        if ($('#scroll').prop('checked')) {
-                            $.fn.viewScroller.setChangeWhenAnim(true);
-                        } else {
-                            $.fn.viewScroller.setChangeWhenAnim(false);
-                        }
+                $('#scroll').on('click', function() {
+                    if ($('#scroll').prop('checked')) {
+                        $.fn.viewScroller.setChangeWhenAnim(true);
+                    } else {
+                        $.fn.viewScroller.setChangeWhenAnim(false);
                     }
-                );
+                });
             });
-
-           
         </script>
     </body>
 </html>
