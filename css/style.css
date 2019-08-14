@@ -1,3 +1,9 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 
 #top{
   background-image: url("../img/image.png");
@@ -47,10 +53,150 @@ nav a:hover {
 }
 
 .blocks{
-  height: 100vh;
+  max-height: 1080px;  
+  max-width: 1920px;
+  margin: auto;
 }
-#uzbekistan .uz-top{
-  font-family: 'Libre Caslon Text', serif;
+
+.ab-heading{
+  text-align: center;
+  max-height: 270px;
+  height: 20vh;
+}
+
+.ab-heading .text-shadow1{
+  color: #000;
+  opacity: 0.2;
+  font-family: Montserrat;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  font-size: 56px;
+}
+
+.ab-heading h2{
+  font-family: "Playfair Display";
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 32px;
+  margin-top: -38px;
+}
+
+.ab-content{
+  max-height: 540px;
+  height: 60vh;
+}
+
+.ab-content .text{
+  width: 400px;
+  line-height: 2;
+  font-weight: 400;
+}
+
+.ab-footer{
+  max-height: 270px;
+  height: 20vh;
+  background-image: url('../img/about_us.png');
+  text-align: center;
+  color: #fff;
+}
+
+.ab-footer .container, .ab-footer .row{
+  position: relative; 
+  height: 100%;
+}
+
+.ab-footer .num{
+  font-weight: 600;
+  font-size: 56px;
+  font-family: "Montserrat";
+  height: 70px;
+  /* letter-spacing: 1px; */
+}
+.ab-footer .num span{
+  font-weight: normal;
+}
+
+.ab-footer .sub-text{
+  font-weight: 300;
+  font-family: "Roboto";
+  line-height: 1.3;
+  font-size: 18px;
+}
+
+.uz-top{
+  max-height: 270px;
+  height: 20vh;
+  background-image: url('../img/welcome.png');
+}
+
+.uz-top .text-shadow1{
+  color: #000;
+  opacity: 0.2;
+  font-family: Montserrat;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 56px;
+}
+
+.uz-top h2{
+  font-family: "Playfair Display";
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 32px;
+  margin-top: -38px;
+}
+
+.uz-content{
+  max-height: 810px;
+  height: 80vh;
+}
+
+.uz-content .inner{
+  max-width: 400px;
+  position: relative;
+}
+
+.uz-content .inner hr{
+  width: 70px;
+  background-color: #52ac62;
+  height: 2px;
+  display: block;
+  margin: auto;
+}
+
+.uz-content .inner .text{
+  font-size: 18px;
+}
+.uz-content .inner .mybtn{
+  display: block;
+  margin: auto;
+  text-transform: uppercase;
+  border-color: #52ac62!important;
+  color: #52ac62;
+  font-weight: bold;
+  width: 230px;
+  letter-spacing: 1px;
+}
+.uz-content .inner .mybtn:hover{
+  color: #fff;
+  background-color: #52ac62!important;
+  
+}
+
+.uz-content img{
+  max-height: 810px;
+  height: 80vh;
+  width: 100%;
+}
+
+
+
+@media (max-width: 600px) {
+  .ab-footer .num{
+    font-size: 36px;
+    height: 50px;
+  }
+  .ab-footer .sub-text{
+    font-size: 14px;
+  }
 }
