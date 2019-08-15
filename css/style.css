@@ -53,15 +53,15 @@ nav a:hover {
 }
 
 .blocks{
-  max-height: 1080px;  
-  max-width: 1920px;
+  /* max-height: 1080px;  
+  max-width: 1920px; */
   margin: auto;
 }
 
 .ab-heading{
   text-align: center;
-  max-height: 270px;
-  height: 20vh;
+  /* max-height: 270px; */
+  height: 25vh;
 }
 
 .ab-heading .text-shadow1{
@@ -82,8 +82,8 @@ nav a:hover {
 }
 
 .ab-content{
-  max-height: 540px;
-  height: 60vh;
+  /* max-height: 540px; */
+  height: 50vh;
 }
 
 .ab-content .text{
@@ -92,12 +92,30 @@ nav a:hover {
   font-weight: 400;
 }
 
+.ab-content .row{
+  width: 100%;
+}
+
+.left-content{
+  position: relative;
+  height: 100%;
+}
+.ab-content img{
+ max-height: 570px;
+ max-width: 370px;
+ width: 100%;
+ margin: 0 auto;
+}
+
 .ab-footer{
-  max-height: 270px;
-  height: 20vh;
+  /* max-height: 270px; */
+  height: 25vh;
   background-image: url('../img/about_us.png');
   text-align: center;
   color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left top;
 }
 
 .ab-footer .container, .ab-footer .row{
@@ -124,9 +142,12 @@ nav a:hover {
 }
 
 .uz-top{
-  max-height: 270px;
+  /* max-height: 270px; */
   height: 20vh;
   background-image: url('../img/welcome.png');
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: cover;
 }
 
 .uz-top .text-shadow1{
@@ -147,7 +168,7 @@ nav a:hover {
 }
 
 .uz-content{
-  max-height: 810px;
+  /* max-height: 810px; */
   height: 80vh;
 }
 
@@ -173,9 +194,11 @@ nav a:hover {
   text-transform: uppercase;
   border-color: #52ac62!important;
   color: #52ac62;
-  font-weight: bold;
+  font-weight: 600;
   width: 230px;
   letter-spacing: 1px;
+  font-size: 12px;
+  transition: all 0.3s ease-in-out;
 }
 .uz-content .inner .mybtn:hover{
   color: #fff;
@@ -184,19 +207,67 @@ nav a:hover {
 }
 
 .uz-content img{
-  max-height: 810px;
+  /* max-height: 810px; */
   height: 80vh;
   width: 100%;
 }
 
-
+.tours{
+  background-image: url('../img/uzbekistan_background.png');
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+}
 
 @media (max-width: 600px) {
+  .ab-footer{
+    height: 15vh;
+  }
+  .ab-content{
+    height: 70vh;
+  }
+  .ab-heading{
+    height: 15vh;
+  }
   .ab-footer .num{
     font-size: 36px;
     height: 50px;
   }
   .ab-footer .sub-text{
     font-size: 14px;
+  }
+
+  .uz-top{
+    height: 15vh;
+  }
+  
+  .uz-top .text-shadow1{
+    
+    font-size: 26px;
+    text-align: center;
+  }
+  
+  .uz-top h2{
+    font-size: 24px;
+    margin-top: -25px;
+  }
+
+  .uz-content img{
+    height: 100%;
+    max-width: 600px;
+    width: 100%;
+  }
+  .uz-content{
+    max-height: 810px;
+    height: 85vh;
+  }
+  .uz-content .inner .text{
+    font-size: 14px;
+    line-height: 1.7em;
+  }
+  .uz-content .inner .mybtn{
+    
+    width: 170px;
+    font-size: 12px;
   }
 }
