@@ -219,6 +219,149 @@ nav a:hover {
   background-size: cover;
 }
 
+.tr-header{
+  height: 30vh;
+  /* max-width: 1920px; */
+  /* background: #eee; */
+  text-align: right;
+  padding-right: 17%;
+  position: relative;
+
+}
+
+.tr-header .top{
+  position: absolute;
+  top: 30%;
+  right: 15%;
+  width: 1080px;
+}
+
+.tr-header .text{
+  text-align: right;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 3rem;
+  color: #ffffff;
+}
+
+.tr-header .text1{
+  font-family: Roboto;
+  /* padding-top: 8%; */
+  color: #ffffff;
+  text-align: right;
+  font-size: 17px;
+  padding-left: 500px;
+  line-height: 1.7;
+}
+
+.tr-content{
+  height: 70vh;
+  padding: 0 5%;
+  position: relative;
+}
+
+.tr-content .bg-text{
+  color: #e1e1e1;
+  text-transform: uppercase;
+  font-family: Oswald;
+  font-size: 100px;
+  font-weight: 700;
+  position: absolute;
+  opacity: 0.2;
+  top: 0;
+  left: 5%;
+}
+
+.tr-content .cards{
+  width: 100%;
+  position: relative;
+  margin-top: 8%;
+  /* background-color: #fff; */
+}
+.tr-content .cards .row{
+  margin: 0 auto;
+  /* background-color: #fff; */
+  /* max-width: 1440px; */
+  padding: 0 3%;
+
+}
+
+
+
+.tr-content .my-card{
+  /* max-height: 320px; */
+  height: 35vh;
+  padding: 0 15px!important;
+  min-height: 270px;  
+  margin: auto;
+  background:url('../img/dev.jpg') rgba(0,0,0,0.56);
+  background-size:cover;
+  background-blend-mode: multiply;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+  z-index: 2;
+}
+.tr-content .my-card:hover{
+  background:url('../img/dev.jpg') rgba(0,0,0,0.1);
+  background-size:cover;
+  background-blend-mode: multiply;
+  transform: scale(1.01);
+  z-index: 5;
+  box-shadow: 0 0 10px 0px rgb(63, 63, 63)
+}
+.tr-content .my-card .logo-card{
+  display: block;
+  text-align: center;
+  padding: 25px 0;
+  font-size: 24px;
+  padding-bottom: 15px;
+}
+.tr-content .my-card .heading{
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  font-family: Montserrat;
+  font-weight: 600;
+  padding-bottom: 40px;
+}
+.tr-content .my-card .text{
+  display: block;
+  text-align: justify;
+  font-size: 10px;
+  font-family: Montserrat;
+  font-weight: normal;
+  padding-bottom: 30px;
+  overflow: none;
+}
+.tr-content .my-card .more{
+  display: block;
+  text-align: justify;
+  font-size: 10px;
+  font-family: Montserrat;
+  font-weight: 200;
+  letter-spacing: 1px;
+  color: #fff;
+  padding-bottom: 20px;
+  text-align: center;
+  overflow: none;
+
+}
+
+.tr-content .my-card .more img{
+  width: 6px;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 600px) {
   .ab-footer{
     height: 15vh;
