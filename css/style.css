@@ -277,15 +277,24 @@ nav a:hover {
   border: 1px solid #afc3c9;
   box-sizing: border-box;
   border-radius: 30px;
+  padding-left: 15px;
+}
+.contact:focus {
+  outline: none;
 }
 .contact-textarea {
+  width: 100%;
   margin-bottom: 15px;
   border: 1px solid #afc3c9;
   box-sizing: border-box;
   border-radius: 30px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+.contact-textarea:focus {
+  outline: none;
 }
 label {
   color: grey;
   font-size: 18px;
-  
 }
