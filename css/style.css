@@ -1,18 +1,17 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-
-#top{
+#top {
   background-image: url("../img/image.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
 .brand {
   font-size: 32px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 900;
 }
 
@@ -52,19 +51,19 @@ nav a:hover {
   box-shadow: 0px 0px 100px #707070;
 }
 
-.blocks{
+.blocks {
   /* max-height: 1080px;  
   max-width: 1920px; */
   margin: auto;
 }
 
-.ab-heading{
+.ab-heading {
   text-align: center;
   /* max-height: 270px; */
   height: 25vh;
 }
 
-.ab-heading .text-shadow1{
+.ab-heading .text-shadow1 {
   color: #000;
   opacity: 0.2;
   font-family: Montserrat;
@@ -73,7 +72,7 @@ nav a:hover {
   font-size: 56px;
 }
 
-.ab-heading h2{
+.ab-heading h2 {
   font-family: "Playfair Display";
   font-weight: 700;
   text-transform: uppercase;
@@ -81,36 +80,36 @@ nav a:hover {
   margin-top: -38px;
 }
 
-.ab-content{
+.ab-content {
   /* max-height: 540px; */
   height: 50vh;
 }
 
-.ab-content .text{
+.ab-content .text {
   width: 400px;
   line-height: 2;
   font-weight: 400;
 }
 
-.ab-content .row{
+.ab-content .row {
   width: 100%;
 }
 
-.left-content{
+.left-content {
   position: relative;
   height: 100%;
 }
-.ab-content img{
- max-height: 570px;
- max-width: 370px;
- width: 100%;
- margin: 0 auto;
+.ab-content img {
+  max-height: 570px;
+  max-width: 370px;
+  width: 100%;
+  margin: 0 auto;
 }
 
-.ab-footer{
+.ab-footer {
   /* max-height: 270px; */
   height: 25vh;
-  background-image: url('../img/about_us.png');
+  background-image: url("../img/about_us.png");
   text-align: center;
   color: #fff;
   background-repeat: no-repeat;
@@ -118,39 +117,40 @@ nav a:hover {
   background-position: left top;
 }
 
-.ab-footer .container, .ab-footer .row{
-  position: relative; 
+.ab-footer .container,
+.ab-footer .row {
+  position: relative;
   height: 100%;
 }
 
-.ab-footer .num{
+.ab-footer .num {
   font-weight: 600;
   font-size: 56px;
   font-family: "Montserrat";
   height: 70px;
   /* letter-spacing: 1px; */
 }
-.ab-footer .num span{
+.ab-footer .num span {
   font-weight: normal;
 }
 
-.ab-footer .sub-text{
+.ab-footer .sub-text {
   font-weight: 300;
   font-family: "Roboto";
   line-height: 1.3;
   font-size: 18px;
 }
 
-.uz-top{
+.uz-top {
   /* max-height: 270px; */
   height: 20vh;
-  background-image: url('../img/welcome.png');
+  background-image: url("../img/welcome.png");
   background-repeat: no-repeat;
   background-position: left bottom;
   background-size: cover;
 }
 
-.uz-top .text-shadow1{
+.uz-top .text-shadow1 {
   color: #000;
   opacity: 0.2;
   font-family: Montserrat;
@@ -159,7 +159,7 @@ nav a:hover {
   font-size: 56px;
 }
 
-.uz-top h2{
+.uz-top h2 {
   font-family: "Playfair Display";
   font-weight: 700;
   text-transform: uppercase;
@@ -167,17 +167,17 @@ nav a:hover {
   margin-top: -38px;
 }
 
-.uz-content{
+.uz-content {
   /* max-height: 810px; */
   height: 80vh;
 }
 
-.uz-content .inner{
+.uz-content .inner {
   max-width: 400px;
   position: relative;
 }
 
-.uz-content .inner hr{
+.uz-content .inner hr {
   width: 70px;
   background-color: #52ac62;
   height: 2px;
@@ -185,14 +185,14 @@ nav a:hover {
   margin: auto;
 }
 
-.uz-content .inner .text{
+.uz-content .inner .text {
   font-size: 18px;
 }
-.uz-content .inner .mybtn{
+.uz-content .inner .mybtn {
   display: block;
   margin: auto;
   text-transform: uppercase;
-  border-color: #52ac62!important;
+  border-color: #52ac62 !important;
   color: #52ac62;
   font-weight: 600;
   width: 230px;
@@ -200,74 +200,92 @@ nav a:hover {
   font-size: 12px;
   transition: all 0.3s ease-in-out;
 }
-.uz-content .inner .mybtn:hover{
+.uz-content .inner .mybtn:hover {
   color: #fff;
-  background-color: #52ac62!important;
-  
+  background-color: #52ac62 !important;
 }
 
-.uz-content img{
+.uz-content img {
   /* max-height: 810px; */
   height: 80vh;
   width: 100%;
 }
 
-.tours{
-  background-image: url('../img/uzbekistan_background.png');
+.tours {
+  background-image: url("../img/uzbekistan_background.png");
   background-repeat: no-repeat;
   background-position: left top;
   background-size: cover;
 }
 
 @media (max-width: 600px) {
-  .ab-footer{
+  .ab-footer {
     height: 15vh;
   }
-  .ab-content{
+  .ab-content {
     height: 70vh;
   }
-  .ab-heading{
+  .ab-heading {
     height: 15vh;
   }
-  .ab-footer .num{
+  .ab-footer .num {
     font-size: 36px;
     height: 50px;
   }
-  .ab-footer .sub-text{
+  .ab-footer .sub-text {
     font-size: 14px;
   }
 
-  .uz-top{
+  .uz-top {
     height: 15vh;
   }
-  
-  .uz-top .text-shadow1{
-    
+
+  .uz-top .text-shadow1 {
     font-size: 26px;
     text-align: center;
   }
-  
-  .uz-top h2{
+
+  .uz-top h2 {
     font-size: 24px;
     margin-top: -25px;
   }
 
-  .uz-content img{
+  .uz-content img {
     height: 100%;
     max-width: 600px;
     width: 100%;
   }
-  .uz-content{
+  .uz-content {
     max-height: 810px;
     height: 85vh;
   }
-  .uz-content .inner .text{
+  .uz-content .inner .text {
     font-size: 14px;
     line-height: 1.7em;
   }
-  .uz-content .inner .mybtn{
-    
+  .uz-content .inner .mybtn {
     width: 170px;
     font-size: 12px;
   }
+}
+
+/* contact us */
+.contact {
+  height: 45px;
+  width: 100%;
+  margin-bottom: 15px;
+  border: 1px solid #afc3c9;
+  box-sizing: border-box;
+  border-radius: 30px;
+}
+.contact-textarea {
+  margin-bottom: 15px;
+  border: 1px solid #afc3c9;
+  box-sizing: border-box;
+  border-radius: 30px;
+}
+label {
+  color: grey;
+  font-size: 18px;
+  
 }
