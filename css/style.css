@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url("/font/Gilroy-ExtraBold.woff") format("woff");
+ }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -57,6 +62,7 @@ nav a:hover {
   margin: auto;
 }
 
+/* About */
 .ab-heading {
   text-align: center;
   /* max-height: 270px; */
@@ -141,6 +147,7 @@ nav a:hover {
   font-size: 18px;
 }
 
+/* Uzbekistan */
 .uz-top {
   /* max-height: 270px; */
   height: 20vh;
@@ -211,7 +218,9 @@ nav a:hover {
   width: 100%;
 }
 
-.tours {
+
+/* Additional info */
+.add-info {
   background-image: url("../img/uzbekistan_background.png");
   background-repeat: no-repeat;
   background-position: left top;
@@ -352,6 +361,249 @@ nav a:hover {
   margin-left: 10px;
 }
 
+/* Tours */
+.tours{
+  height: 100vh;
+  background-image: url('../img/tours_background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left bottom;
+}
+
+.tour-top{
+  height: 20vh;
+}
+
+.tour-top .text-shadow1 {
+  color: #8edb92;
+  font-family: Montserrat;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 78px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 15px #000;
+}
+.tour-top h2 {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 38px;
+  margin-top: -38px;
+  color: #fff;
+  text-shadow: 5px 0 15px #000;
+
+}
+
+.tour-main{
+  height: 80vh;
+  padding: 0 15%;
+}
+
+.tour-main .glider{
+  margin-top: 6%;
+  /* height: 50vh; */
+}
+
+.tour-card{
+  /* height: 300px; */
+  background-color: #fff;
+  margin: 0 10px;
+  min-height: 390px;
+  max-height: 540px;
+  min-width: 270px;
+  padding: 15px;
+  box-shadow: 0 0 20px #000;
+  color: #fff;
+  position: relative;
+  transition: all 0.3s ease;
+  max-width: 390px;
+}
+
+.tour-card .tour-heading{
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-family: Gilroy;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.tour-card .tour-heading::after{
+  content: '';
+  display: block;
+  height: 2px;
+  background-color: #fff;
+  width: 50px;
+  margin: 15px auto;
+}
+
+.tour-card .tour-cites{
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight:  600;
+  letter-spacing: 0.5px;
+  /* text-shadow: 0 1.5px 3px #555; */
+  font-family: Montserrat;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.tour-card .tour-text{
+  font-size: 13px;
+  letter-spacing: 0.07em;
+  margin-bottom: 15px;
+}
+
+.tour-card .tour-list{
+  margin-bottom: 20px;
+}
+
+.tour-card .tour-item i{
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+.tour-card .tour-item{
+  text-transform: uppercase;
+}
+
+.tour-card .tour-more{
+  position: absolute;
+  display: block;
+  text-align: center;
+  padding: 10px 24px;
+  border: 1px solid #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: Montserrat;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  color: #fff;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.tour-card .tour-more:hover{
+  color: #47754a!important;
+  background-color: #fff;
+  border-color: transparent;
+  text-decoration: none;
+}
+
+
+.tour-main .classic{
+  background: url('../img/classic.png') rgba(0, 0, 0, 0.2);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+.tour-main .silver{
+  background: url('../img/silver.png') rgba(0, 0, 0, 0.2);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+.tour-main .gold{
+  background: url('../img/gold.png') rgba(0, 0, 0, 0.2);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+.tour-main .classic:hover{
+  background: url('../img/classic.png') rgba(0, 0, 0, 0);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+.tour-main .silver:hover{
+  background: url('../img/silver.png') rgba(0, 0, 0, 0);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+.tour-main .gold:hover{
+  background: url('../img/gold.png') rgba(0, 0, 0, 0.1);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* contact us */
+.contact-page{
+  height: 100vh;
+  background-image: url('../img/bg1-1.png');
+  background-size: cover;
+  background-repeat:  no-repeat;
+}
+
+.contact-main{
+  height: 100vh;
+  background-color: #fff;
+}
+
+.con-top .text-shadow1 {
+  color: #000;
+  opacity: 0.2;
+  font-family: Montserrat;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 56px;
+}
+
+.con-top h2 {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 32px;
+  margin-top: -38px;
+}
+
+.contact {
+  height: 45px;
+  width: 100%;
+  margin-bottom: 15px;
+  border: 1px solid #afc3c9;
+  box-sizing: border-box;
+  border-radius: 30px;
+  padding-left: 15px;
+}
+.contact:focus {
+  outline: none;
+}
+.contact-textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  border: 1px solid #afc3c9;
+  box-sizing: border-box;
+  border-radius: 30px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+.contact-textarea:focus {
+  outline: none;
+}
+label {
+  color: grey;
+  font-size: 18px;
+}
 
 
 
@@ -412,32 +664,3 @@ nav a:hover {
   }
 }
 
-/* contact us */
-.contact {
-  height: 45px;
-  width: 100%;
-  margin-bottom: 15px;
-  border: 1px solid #afc3c9;
-  box-sizing: border-box;
-  border-radius: 30px;
-  padding-left: 15px;
-}
-.contact:focus {
-  outline: none;
-}
-.contact-textarea {
-  width: 100%;
-  margin-bottom: 15px;
-  border: 1px solid #afc3c9;
-  box-sizing: border-box;
-  border-radius: 30px;
-  padding-left: 20px;
-  padding-top: 10px;
-}
-.contact-textarea:focus {
-  outline: none;
-}
-label {
-  color: grey;
-  font-size: 18px;
-}
