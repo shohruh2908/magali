@@ -1,0 +1,62 @@
+.uzb-top{
+    background: url('../img/uzb.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.uzb-top .header{
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.arrow{
+    display: block; 
+    color: #fff;
+    border: 1px solid #fff;
+    /* height: 30px; */
+    text-align: center;
+    padding: 20px;
+    /* line-height: 30px; */
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    position: absolute;
+    bottom: 20px;
+    
+}
+
+.arrow i{
+    font-size: 22px;
+    display: block;
+    text-align: center;
+    margin-left: 2px;
+}
+
+.arrow:hover{
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+}
+
+.header h1{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 112px;
+    line-height: 196px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-transform: uppercase;   
+}
+
+.header h3{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 41px;
+    color: #FFFFFF;
+    /* margin-bottom: 15%; */
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.9);
+    margin-bottom: 150px;
+
+}
