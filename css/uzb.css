@@ -11,24 +11,30 @@
 
 .arrow{
     display: block; 
-    color: #fff;
-    border: 1px solid #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    /* border: 0.2px solid #fff; */
     /* height: 30px; */
     text-align: center;
-    padding: 20px;
+    height: 40px;
+    width: 40px;
     /* line-height: 30px; */
     border-radius: 50px;
     transition: all 0.3s ease;
     position: absolute;
     bottom: 20px;
-    
+    color: #fff
 }
 
-.arrow i{
-    font-size: 22px;
+.arrow i::before{
+    font-size: 16px;
     display: block;
     text-align: center;
-    margin-left: 2px;
+    /* margin-left: 2px; */
+    /* font-weight: 200; */
+    line-height: 40px;
+    width: 100%;
+    margin-left: 1.5px;
+    margin-top: 1px;
 }
 
 .arrow:hover{
@@ -274,7 +280,10 @@
     width: 28%;
     /* height: 100%; */
     height: 380px;
-
+    transition: all 0.2s ease;
+}
+.transport-card:hover{
+    transform: scale(1.01);
 }
 .transport-card img{
     /* height: 60%!important; */
@@ -308,3 +317,107 @@
 }
 
 
+/* FOOD */
+
+.food{
+    position: relative;
+    height: 100vh;
+}
+
+.uzor-l{
+    position: absolute;
+    left: 0;
+    bottom: 5%;
+    height: 60vh;
+}
+.uzor-r{
+    position: absolute;
+    right: 0;
+    top: 5%;
+    height: 60vh;
+    transform: rotate(180deg);
+}
+
+.food-top {
+  text-align: center;
+  /* max-height: 270px; */
+  height: 15vh;
+}
+
+.food-top .text-shadow1 {
+  color:#000;
+  opacity: 0.2;
+  font-family: Montserrat;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 56px;
+  z-index: 1;
+  margin: 0;
+
+  /* text-align: center; */
+}
+
+.food-top h2 {
+  font-family: "serif";
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 32px;
+  margin-top: -32px;
+  /* text-align: center; */
+  /* margin-left: 20px; */
+  z-index: 2;
+}
+
+.food-main{
+    height: 100vh;
+    position: relative;
+    max-width: 1920px;
+}
+
+.line .food-block{
+    position: relative;
+    height: 35vh;
+    max-height: 270px;
+    width: 40%;
+    background-color: #eee;
+    margin: 0 25px;
+    margin-bottom: 50px;
+    /* background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 50%; */
+    max-width: 422px;
+}
+
+.food-block .title{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    /* padding: 38px; */
+    background: rgba(0, 0, 0, 0.7);    
+    text-transform: uppercase;
+    font-family: Montserrat;
+    height: 75px;
+    color: #fff;
+    font-size: 24px;
+    line-height: 75px;
+    font-weight: 600;
+}
+
+.food-block img{
+    width: 100%;
+    height: 35vh;
+    max-height: 270px;
+}
+
+.food-num{
+    position: absolute;
+    bottom: 2%;
+    right: 5%;
+    font-size: 100px;
+    font-family: Montserrat;
+    font-weight: 700;
+    color: #aaa;
+    opacity: 0.3;
+}
