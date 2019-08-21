@@ -74,6 +74,10 @@ nav a:hover {
   text-align: center;
   /* max-height: 270px; */
   height: 25vh;
+  background-image: url("../img/welcome.png");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: cover;
 }
 
 .ab-heading .text-shadow1 {
@@ -236,26 +240,19 @@ nav a:hover {
 
 .tr-header{
   height: 30vh;
-  /* max-width: 1920px; */
-  /* background: #eee; */
-  text-align: right;
-  padding-right: 17%;
-  position: relative;
-
-}
-
-.tr-header .top{
-  position: absolute;
-  top: 30%;
-  right: 15%;
-  width: 1080px;
+  max-width: 1920px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 110px;
 }
 
 .tr-header .text{
   text-align: right;
   font-family: Montserrat;
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 48px;
   color: #ffffff;
 }
 
@@ -264,8 +261,10 @@ nav a:hover {
   /* padding-top: 8%; */
   color: #ffffff;
   text-align: right;
+  width: 80%;
+  max-width: 700px;
+  margin-left: auto;
   font-size: 17px;
-  padding-left: 500px;
   line-height: 1.7;
 }
 
@@ -305,9 +304,8 @@ nav a:hover {
 
 .tr-content .my-card{
   /* max-height: 320px; */
-  height: 35vh;
   padding: 0 15px!important;
-  min-height: 270px;  
+  max-height: 370px; 
   margin: auto;
   background:url('../img/dev.jpg') rgba(0,0,0,0.56);
   background-size:cover;
@@ -315,6 +313,8 @@ nav a:hover {
   color: #fff;
   transition: all 0.2s ease-in-out;
   z-index: 2;
+  max-width: 270px;
+  min-width: 190px;
 }
 .tr-content .my-card:hover{
   background:url('../img/dev.jpg') rgba(0,0,0,0.1);
@@ -540,19 +540,6 @@ nav a:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* contact us */
 .contact-page{
   height: 100vh;
@@ -621,14 +608,27 @@ label {
 
 
 @media (max-width: 600px) {
+
+  .myNav{
+    padding: 16px 0;
+  }
+
   .ab-footer {
-    height: 15vh;
+    display: none;
   }
   .ab-content {
-    height: 70vh;
+    height: 85vh;
   }
   .ab-heading {
     height: 15vh;
+  }
+  .ab-heading .text-shadow1{
+    font-size: 28px;
+    margin: 0;
+  }
+  .ab-heading h2{
+    font-size: 24px;
+    margin-top: -16px;
   }
   .ab-footer .num {
     font-size: 36px;
@@ -638,18 +638,25 @@ label {
     font-size: 14px;
   }
 
+  .ab-content .text {
+    font-size: 12px;
+  }
+
+
+  /* UZBTOP */
   .uz-top {
     height: 15vh;
   }
 
   .uz-top .text-shadow1 {
-    font-size: 26px;
+    font-size: 22px;
     text-align: center;
+    margin: 0;
   }
 
   .uz-top h2 {
-    font-size: 24px;
-    margin-top: -25px;
+    font-size: 18px;
+    margin-top: -14px;
   }
 
   .uz-content img {
@@ -662,12 +669,144 @@ label {
     height: 85vh;
   }
   .uz-content .inner .text {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.7em;
+    padding: 10px 20px;
+    text-align: justify;
   }
   .uz-content .inner .mybtn {
     width: 170px;
     font-size: 12px;
+    margin: 10px auto;
   }
+
+  .uz-content .inner hr {
+    display: none;
+  }
+  
+
+  /* ADDITIONAL INFO */
+  .tr-header{
+    height: 15vh;
+    padding: 0 20px;
+  }
+  
+  .tr-header .text{
+    text-align: center;
+    font-size: 28px;
+    margin-top: 20px;
+  }
+  
+  .tr-header .text1{
+    display: none;
+  }
+  
+  .tr-content{
+    height: 85vh;
+    display: flex;
+    align-items: center;
+  }
+  
+  .tr-content .bg-text{
+    font-size: 50px;
+  }
+
+  
+  .tr-content .my-card{
+    padding: 0 15px!important;
+    max-height: 220px; 
+    margin: auto;
+    max-width: 270px;
+    min-width: 120px;
+    margin-bottom: 20px;
+    width: 170px!important;
+  }
+  
+  .tr-content .cards{
+    margin-top: 0%;
+  }
+  .tr-content .cards .row{
+    padding: 0;
+  }
+  
+
+  .tr-content .my-card .logo-card{
+    display: block;
+    text-align: center;
+    padding: 16px 0;
+    font-size: 12px;
+    padding-bottom: 15px;
+  }
+  .tr-content .my-card .heading{
+    font-size: 14px;
+    padding-bottom: 8px;
+  }
+  .tr-content .my-card .text{
+    font-size: 8px;
+    padding-bottom: 10px;
+  }
+  .tr-content .my-card .more{
+    font-size: 8px;
+    padding-bottom: 10px;
+  }
+  
+  .tr-content .my-card .more img{
+    width: 3px;
+    margin-left: 6px;
+  }
+
+  /* TOUR */
+  .tour-top{
+    height: 15vh;
+  }
+  
+  .tour-top .text-shadow1 {
+    color: #8edb92;
+    font-family: Montserrat;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 48px;
+    letter-spacing: 1px;
+    text-shadow: 0 0 15px #000;
+    margin: 0;
+  }
+  .tour-top h2 {
+    font-size: 32px;
+    margin-top: -24px;
+  }
+  
+  .tour-main{
+    height: 85vh;
+    padding: 0 10%;
+  }
+
+  .glider-next{
+    right:-30px;
+    left:auto
+  }
+  .glider-prev{
+    left:-30px;
+    right:auto
+  }
+  
+  .con-top .text-shadow1 {
+    color: #000;
+    opacity: 0.2;
+    font-family: Montserrat;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 32px;
+    margin: 0;
+  }
+  
+  .con-top h2 {
+    font-family: "Playfair Display";
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-top: -18px;
+  }
+  
+
 }
 
