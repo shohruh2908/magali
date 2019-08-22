@@ -40,6 +40,10 @@ nav a:hover {
 }
 .lang1 {
   border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+.lang2 {
+  border-left: 1px solid #fff;
 }
 
 .myNav {
