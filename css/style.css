@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Gilroy";
   src: url("/font/Gilroy-ExtraBold.woff") format("woff");
- }
+}
 
 * {
   box-sizing: border-box;
@@ -20,7 +20,7 @@
   font-weight: 900;
   color: #fff;
 }
-.brand:hover{
+.brand:hover {
   text-decoration: none;
   color: #fff;
 }
@@ -229,7 +229,6 @@ nav a:hover {
   width: 100%;
 }
 
-
 /* Additional info */
 .add-info {
   background-image: url("../img/uzbekistan_background.png");
@@ -238,7 +237,7 @@ nav a:hover {
   background-size: cover;
 }
 
-.tr-header{
+.tr-header {
   height: 30vh;
   max-width: 1920px;
   margin: auto;
@@ -248,7 +247,7 @@ nav a:hover {
   padding: 0 110px;
 }
 
-.tr-header .text{
+.tr-header .text {
   text-align: right;
   font-family: Montserrat;
   font-weight: 600;
@@ -256,7 +255,7 @@ nav a:hover {
   color: #ffffff;
 }
 
-.tr-header .text1{
+.tr-header .text1 {
   font-family: Roboto;
   /* padding-top: 8%; */
   color: #ffffff;
@@ -268,13 +267,13 @@ nav a:hover {
   line-height: 1.7;
 }
 
-.tr-content{
+.tr-content {
   height: 70vh;
   padding: 0 5%;
   position: relative;
 }
 
-.tr-content .bg-text{
+.tr-content .bg-text {
   color: #e1e1e1;
   text-transform: uppercase;
   font-family: Oswald;
@@ -286,29 +285,26 @@ nav a:hover {
   left: 5%;
 }
 
-.tr-content .cards{
+.tr-content .cards {
   width: 100%;
   position: relative;
   margin-top: 8%;
   /* background-color: #fff; */
 }
-.tr-content .cards .row{
+.tr-content .cards .row {
   margin: 0 auto;
   /* background-color: #fff; */
   /* max-width: 1440px; */
   padding: 0 3%;
-
 }
 
-
-
-.tr-content .my-card{
+.tr-content .my-card {
   /* max-height: 320px; */
-  padding: 0 15px!important;
-  max-height: 370px; 
+  padding: 0 15px !important;
+  max-height: 370px;
   margin: auto;
-  background:url('../img/dev.jpg') rgba(0,0,0,0.56);
-  background-size:cover;
+  background: url("../img/dev.jpg") rgba(0, 0, 0, 0.56);
+  background-size: cover;
   background-blend-mode: multiply;
   color: #fff;
   transition: all 0.2s ease-in-out;
@@ -316,22 +312,22 @@ nav a:hover {
   max-width: 270px;
   min-width: 190px;
 }
-.tr-content .my-card:hover{
-  background:url('../img/dev.jpg') rgba(0,0,0,0.1);
-  background-size:cover;
+.tr-content .my-card:hover {
+  background: url("../img/dev.jpg") rgba(0, 0, 0, 0.1);
+  background-size: cover;
   background-blend-mode: multiply;
   transform: scale(1.01);
   z-index: 5;
-  box-shadow: 0 0 10px 0px rgb(63, 63, 63)
+  box-shadow: 0 0 10px 0px rgb(63, 63, 63);
 }
-.tr-content .my-card .logo-card{
+.tr-content .my-card .logo-card {
   display: block;
   text-align: center;
   padding: 25px 0;
   font-size: 24px;
   padding-bottom: 15px;
 }
-.tr-content .my-card .heading{
+.tr-content .my-card .heading {
   display: block;
   text-align: center;
   font-size: 18px;
@@ -339,7 +335,7 @@ nav a:hover {
   font-weight: 600;
   padding-bottom: 40px;
 }
-.tr-content .my-card .text{
+.tr-content .my-card .text {
   display: block;
   text-align: justify;
   font-size: 10px;
@@ -348,7 +344,7 @@ nav a:hover {
   padding-bottom: 30px;
   overflow: none;
 }
-.tr-content .my-card .more{
+.tr-content .my-card .more {
   display: block;
   text-align: justify;
   font-size: 10px;
@@ -359,25 +355,24 @@ nav a:hover {
   padding-bottom: 20px;
   text-align: center;
   overflow: none;
-
 }
 
-.tr-content .my-card .more img{
+.tr-content .my-card .more img {
   width: 6px;
   display: inline-block;
   margin-left: 10px;
 }
 
 /* Tours */
-.tours{
+.tours {
   height: 100vh;
-  background-image: url('../img/tours_background.jpg');
+  background-image: url("../img/tours_background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left bottom;
 }
 
-.tour-top{
+.tour-top {
   height: 20vh;
 }
 
@@ -398,20 +393,19 @@ nav a:hover {
   margin-top: -38px;
   color: #fff;
   text-shadow: 5px 0 15px #000;
-
 }
 
-.tour-main{
+.tour-main {
   height: 80vh;
   padding: 0 15%;
 }
 
-.tour-main .glider{
+.tour-main .glider {
   margin-top: 6%;
   /* height: 50vh; */
 }
 
-.tour-card{
+.tour-card {
   /* height: 300px; */
   background-color: #fff;
   margin: 0 10px;
@@ -426,7 +420,7 @@ nav a:hover {
   max-width: 390px;
 }
 
-.tour-card .tour-heading{
+.tour-card .tour-heading {
   color: #fff;
   text-transform: uppercase;
   font-size: 28px;
@@ -437,8 +431,8 @@ nav a:hover {
   padding-top: 10px;
 }
 
-.tour-card .tour-heading::after{
-  content: '';
+.tour-card .tour-heading::after {
+  content: "";
   display: block;
   height: 2px;
   background-color: #fff;
@@ -446,10 +440,10 @@ nav a:hover {
   margin: 15px auto;
 }
 
-.tour-card .tour-cites{
+.tour-card .tour-cites {
   text-transform: uppercase;
   font-size: 12px;
-  font-weight:  600;
+  font-weight: 600;
   letter-spacing: 0.5px;
   /* text-shadow: 0 1.5px 3px #555; */
   font-family: Montserrat;
@@ -457,26 +451,26 @@ nav a:hover {
   margin-bottom: 15px;
 }
 
-.tour-card .tour-text{
+.tour-card .tour-text {
   font-size: 13px;
   letter-spacing: 0.07em;
   margin-bottom: 15px;
 }
 
-.tour-card .tour-list{
+.tour-card .tour-list {
   margin-bottom: 20px;
 }
 
-.tour-card .tour-item i{
+.tour-card .tour-item i {
   margin-right: 5px;
   font-size: 18px;
 }
 
-.tour-card .tour-item{
+.tour-card .tour-item {
   text-transform: uppercase;
 }
 
-.tour-card .tour-more{
+.tour-card .tour-more {
   position: absolute;
   display: block;
   text-align: center;
@@ -493,62 +487,59 @@ nav a:hover {
   transform: translate(-50%);
 }
 
-.tour-card .tour-more:hover{
-  color: #47754a!important;
+.tour-card .tour-more:hover {
+  color: #47754a !important;
   background-color: #fff;
   border-color: transparent;
   text-decoration: none;
 }
 
-
-.tour-main .classic{
-  background: url('../img/classic.png') rgba(0, 0, 0, 0.2);
+.tour-main .classic {
+  background: url("../img/classic.png") rgba(0, 0, 0, 0.2);
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: multiply;
 }
-.tour-main .silver{
-  background: url('../img/silver.png') rgba(0, 0, 0, 0.2);
+.tour-main .silver {
+  background: url("../img/silver.png") rgba(0, 0, 0, 0.2);
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: multiply;
 }
-.tour-main .gold{
-  background: url('../img/gold.png') rgba(0, 0, 0, 0.2);
+.tour-main .gold {
+  background: url("../img/gold.png") rgba(0, 0, 0, 0.2);
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: multiply;
 }
-.tour-main .classic:hover{
-  background: url('../img/classic.png') rgba(0, 0, 0, 0);
+.tour-main .classic:hover {
+  background: url("../img/classic.png") rgba(0, 0, 0, 0);
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: multiply;
 }
-.tour-main .silver:hover{
-  background: url('../img/silver.png') rgba(0, 0, 0, 0);
+.tour-main .silver:hover {
+  background: url("../img/silver.png") rgba(0, 0, 0, 0);
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: multiply;
 }
-.tour-main .gold:hover{
-  background: url('../img/gold.png') rgba(0, 0, 0, 0.1);
+.tour-main .gold:hover {
+  background: url("../img/gold.png") rgba(0, 0, 0, 0.1);
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: multiply;
 }
-
-
 
 /* contact us */
-.contact-page{
+.contact-page {
   height: 100vh;
-  background-image: url('../img/bg1-1.png');
+  background-image: url("../img/bg1-1.png");
   background-size: cover;
-  background-repeat:  no-repeat;
+  background-repeat: no-repeat;
 }
 
-.contact-main{
+.contact-main {
   height: 100vh;
   background-color: #fff;
 }
@@ -599,17 +590,8 @@ label {
   font-size: 18px;
 }
 
-
-
-
-
-
-
-
-
 @media (max-width: 600px) {
-
-  .myNav{
+  .myNav {
     padding: 16px 0;
   }
 
@@ -622,11 +604,11 @@ label {
   .ab-heading {
     height: 15vh;
   }
-  .ab-heading .text-shadow1{
+  .ab-heading .text-shadow1 {
     font-size: 28px;
     margin: 0;
   }
-  .ab-heading h2{
+  .ab-heading h2 {
     font-size: 24px;
     margin-top: -16px;
   }
@@ -641,7 +623,6 @@ label {
   .ab-content .text {
     font-size: 12px;
   }
-
 
   /* UZBTOP */
   .uz-top {
@@ -683,83 +664,80 @@ label {
   .uz-content .inner hr {
     display: none;
   }
-  
 
   /* ADDITIONAL INFO */
-  .tr-header{
+  .tr-header {
     height: 15vh;
     padding: 0 20px;
   }
-  
-  .tr-header .text{
+
+  .tr-header .text {
     text-align: center;
     font-size: 28px;
     margin-top: 20px;
   }
-  
-  .tr-header .text1{
+
+  .tr-header .text1 {
     display: none;
   }
-  
-  .tr-content{
+
+  .tr-content {
     height: 85vh;
     display: flex;
     align-items: center;
   }
-  
-  .tr-content .bg-text{
+
+  .tr-content .bg-text {
     font-size: 50px;
   }
 
-  
-  .tr-content .my-card{
-    padding: 0 15px!important;
-    max-height: 220px; 
+  .tr-content .my-card {
+    padding: 0 15px !important;
+    max-height: 220px;
     margin: auto;
     max-width: 270px;
     min-width: 120px;
     margin-bottom: 20px;
-    width: 170px!important;
+    width: 170px !important;
   }
-  
-  .tr-content .cards{
+
+  .tr-content .cards {
     margin-top: 0%;
   }
-  .tr-content .cards .row{
+  .tr-content .cards .row {
     padding: 0;
   }
-  
 
-  .tr-content .my-card .logo-card{
+  .tr-content .my-card .logo-card {
     display: block;
     text-align: center;
     padding: 16px 0;
     font-size: 12px;
     padding-bottom: 15px;
   }
-  .tr-content .my-card .heading{
+  .tr-content .my-card .heading {
     font-size: 14px;
     padding-bottom: 8px;
   }
-  .tr-content .my-card .text{
+  .tr-content .my-card .text {
     font-size: 8px;
     padding-bottom: 10px;
   }
-  .tr-content .my-card .more{
+  .tr-content .my-card .more {
     font-size: 8px;
     padding-bottom: 10px;
   }
-  
-  .tr-content .my-card .more img{
+
+  .tr-content .my-card .more img {
     width: 3px;
     margin-left: 6px;
   }
 
   /* TOUR */
-  .tour-top{
+  .tour-top {
     height: 15vh;
   }
-  
+
   .tour-top .text-shadow1 {
     color: #8edb92;
     font-family: Montserrat;
@@ -774,21 +752,21 @@ label {
     font-size: 32px;
     margin-top: -24px;
   }
-  
-  .tour-main{
+
+  .tour-main {
     height: 85vh;
     padding: 0 10%;
   }
 
-  .glider-next{
-    right:-30px;
-    left:auto
+  .glider-next {
+    right: -30px;
+    left: auto;
   }
-  .glider-prev{
-    left:-30px;
-    right:auto
+  .glider-prev {
+    left: -30px;
+    right: auto;
   }
-  
+
   .con-top .text-shadow1 {
     color: #000;
     opacity: 0.2;
@@ -798,7 +776,7 @@ label {
     font-size: 32px;
     margin: 0;
   }
-  
+
   .con-top h2 {
     font-family: "Playfair Display";
     font-weight: 700;
@@ -806,7 +784,43 @@ label {
     font-size: 24px;
     margin-top: -18px;
   }
-  
-
 }
 
+/* contact  us */
+
+.contacts a {
+  color: grey;
+  font-size: 30px;
+  text-decoration: none;
+}
+.contacts a:hover {
+  text-decoration: none;
+  color: grey;
+}
+
+.contacts {
+  padding-bottom: 60px;
+}
+
+.fas {
+  color: grey;
+  font-size: 20px;
+  padding-right: 20px;
+}
+
+.social {
+  text-align: center;
+  padding-top: 175px;
+  font-size: 30px;
+  color: grey;
+}
+
+.social-icon {
+  text-align: center;
+  font-size: 25px;
+}
+
+.social-icon i {
+  padding-right: 10px;
+  color: grey;
+}
