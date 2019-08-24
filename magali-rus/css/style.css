@@ -1,0 +1,848 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url("/font/Gilroy-ExtraBold.woff") format("woff");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#top {
+  background-image: url("../img/image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.brand {
+  font-size: 32px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  color: #fff;
+}
+.brand:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav a {
+  color: #fff;
+  transition: 0.2s;
+}
+nav a:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-shadow: 0 0 2px rgb(255, 255, 255);
+}
+
+.lang {
+  border-right: 1px solid #fff;
+}
+.lang1 {
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+.lang2 {
+  border-left: 1px solid #fff;
+}
+
+.myNav {
+  height: 20vh;
+  max-width: 1280px;
+  margin: auto;
+}
+.header {
+  position: relative;
+  height: 80vh;
+}
+
+.header a {
+  font-weight: 300;
+  border-width: 2px;
+  font-size: 14px;
+  /* position: absolute; */
+  letter-spacing: 3px;
+  box-shadow: 0px 0px 100px #707070;
+}
+
+.blocks {
+  /* max-height: 1080px;  
+  max-width: 1920px; */
+  margin: auto;
+  overflow: none;
+  height: 100%;
+}
+
+/* About */
+.ab-heading {
+  text-align: center;
+  /* max-height: 270px; */
+  height: 25vh;
+  background-image: url("../img/welcome.png");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: cover;
+}
+
+.ab-heading .text-shadow1 {
+  color: #000;
+  opacity: 0.2;
+  font-family: Montserrat;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 56px;
+}
+
+.ab-heading h2 {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 32px;
+  margin-top: -38px;
+}
+
+.ab-content {
+  /* max-height: 540px; */
+  height: 50vh;
+}
+
+.ab-content .text {
+  width: 400px;
+  line-height: 2;
+  font-weight: 400;
+}
+
+.ab-content .row {
+  width: 100%;
+}
+
+.left-content {
+  position: relative;
+  height: 100%;
+}
+.ab-content img {
+  max-height: 570px;
+  max-width: 370px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.ab-footer {
+  /* max-height: 270px; */
+  height: 25vh;
+  background-image: url("../img/about_us.png");
+  text-align: center;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left top;
+}
+
+.ab-footer .container,
+.ab-footer .row {
+  position: relative;
+  height: 100%;
+}
+
+.ab-footer .num {
+  font-weight: 600;
+  font-size: 56px;
+  font-family: "Montserrat";
+  height: 70px;
+  /* letter-spacing: 1px; */
+}
+.ab-footer .num span {
+  font-weight: normal;
+}
+
+.ab-footer .sub-text {
+  font-weight: 300;
+  font-family: "Roboto";
+  line-height: 1.3;
+  font-size: 18px;
+}
+
+/* Uzbekistan */
+.uz-top {
+  /* max-height: 270px; */
+  height: 20vh;
+  background-image: url("../img/welcome.png");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: cover;
+}
+
+.uz-top .text-shadow1 {
+  color: #000;
+  opacity: 0.2;
+  font-family: Montserrat;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 56px;
+}
+
+.uz-top h2 {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 32px;
+  margin-top: -38px;
+}
+
+.uz-content {
+  /* max-height: 810px; */
+  height: 80vh;
+}
+
+.uz-content .inner {
+  max-width: 400px;
+  position: relative;
+}
+
+.uz-content .inner hr {
+  width: 70px;
+  background-color: #52ac62;
+  height: 2px;
+  display: block;
+  margin: auto;
+}
+
+.uz-content .inner .text {
+  font-size: 18px;
+}
+.uz-content .inner .mybtn {
+  display: block;
+  margin: auto;
+  text-transform: uppercase;
+  border-color: #52ac62 !important;
+  color: #52ac62;
+  font-weight: 600;
+  width: 230px;
+  letter-spacing: 1px;
+  font-size: 12px;
+  transition: all 0.3s ease-in-out;
+}
+.uz-content .inner .mybtn:hover {
+  color: #fff;
+  background-color: #52ac62 !important;
+}
+
+.uz-content img {
+  /* max-height: 810px; */
+  height: 80vh;
+  width: 100%;
+}
+
+/* Additional info */
+.add-info {
+  background-image: url("../img/uzbekistan_background.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+}
+
+.tr-header {
+  height: 30vh;
+  max-width: 1920px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 110px;
+}
+
+.tr-header .text {
+  text-align: right;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 48px;
+  color: #ffffff;
+}
+
+.tr-header .text1 {
+  font-family: Roboto;
+  /* padding-top: 8%; */
+  color: #ffffff;
+  text-align: right;
+  width: 80%;
+  max-width: 700px;
+  margin-left: auto;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.tr-content {
+  height: 70vh;
+  padding: 0 5%;
+  position: relative;
+}
+
+.tr-content .bg-text {
+  color: #e1e1e1;
+  text-transform: uppercase;
+  font-family: Oswald;
+  font-size: 100px;
+  font-weight: 700;
+  position: absolute;
+  opacity: 0.2;
+  top: 0;
+  left: 5%;
+}
+
+.tr-content .cards {
+  width: 100%;
+  position: relative;
+  margin-top: 8%;
+  /* background-color: #fff; */
+}
+.tr-content .cards .row {
+  margin: 0 auto;
+  /* background-color: #fff; */
+  /* max-width: 1440px; */
+  padding: 0 3%;
+}
+
+.tr-content .my-card {
+  /* max-height: 320px; */
+  padding: 0 15px !important;
+  max-height: 370px;
+  margin: auto;
+  background: url("../img/dev.jpg") rgba(0, 0, 0, 0.56);
+  background-size: cover;
+  background-blend-mode: multiply;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+  z-index: 2;
+  max-width: 270px;
+  min-width: 190px;
+}
+.tr-content .my-card:hover {
+  background: url("../img/dev.jpg") rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-blend-mode: multiply;
+  transform: scale(1.01);
+  z-index: 5;
+  box-shadow: 0 0 10px 0px rgb(63, 63, 63);
+}
+.tr-content .my-card .logo-card {
+  display: block;
+  text-align: center;
+  padding: 25px 0;
+  font-size: 24px;
+  padding-bottom: 15px;
+}
+.tr-content .my-card .heading {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  font-family: Montserrat;
+  font-weight: 600;
+  padding-bottom: 40px;
+}
+.tr-content .my-card .text {
+  display: block;
+  text-align: justify;
+  font-size: 10px;
+  font-family: Montserrat;
+  font-weight: normal;
+  padding-bottom: 30px;
+  overflow: none;
+}
+.tr-content .my-card .more {
+  display: block;
+  text-align: justify;
+  font-size: 10px;
+  font-family: Montserrat;
+  font-weight: 200;
+  letter-spacing: 1px;
+  color: #fff;
+  padding-bottom: 20px;
+  text-align: center;
+  overflow: none;
+}
+
+.tr-content .my-card .more img {
+  width: 6px;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+/* Tours */
+.tours {
+  height: 100vh;
+  background-image: url("../img/tours_background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left bottom;
+}
+
+.tour-top {
+  height: 20vh;
+}
+
+.tour-top .text-shadow1 {
+  color: #8edb92;
+  font-family: Montserrat;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 78px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 15px #000;
+}
+.tour-top h2 {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 38px;
+  margin-top: -38px;
+  color: #fff;
+  text-shadow: 5px 0 15px #000;
+}
+
+.tour-main {
+  height: 80vh;
+  padding: 0 15%;
+}
+
+.tour-main .glider {
+  margin-top: 6%;
+  /* height: 50vh; */
+}
+
+.tour-card {
+  /* height: 300px; */
+  background-color: #fff;
+  margin: 0 10px;
+  min-height: 390px;
+  max-height: 540px;
+  min-width: 270px;
+  padding: 15px;
+  box-shadow: 0 0 20px #000;
+  color: #fff;
+  position: relative;
+  transition: all 0.3s ease;
+  max-width: 390px;
+}
+
+.tour-card .tour-heading {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-family: Gilroy;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.tour-card .tour-heading::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: #fff;
+  width: 50px;
+  margin: 15px auto;
+}
+
+.tour-card .tour-cites {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  /* text-shadow: 0 1.5px 3px #555; */
+  font-family: Montserrat;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.tour-card .tour-text {
+  font-size: 13px;
+  letter-spacing: 0.07em;
+  margin-bottom: 15px;
+}
+
+.tour-card .tour-list {
+  margin-bottom: 20px;
+}
+
+.tour-card .tour-item i {
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+.tour-card .tour-item {
+  text-transform: uppercase;
+}
+
+.tour-card .tour-more {
+  position: absolute;
+  display: block;
+  text-align: center;
+  padding: 10px 24px;
+  border: 1px solid #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: Montserrat;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  color: #fff;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.tour-card .tour-more:hover {
+  color: #47754a !important;
+  background-color: #fff;
+  border-color: transparent;
+  text-decoration: none;
+}
+
+.tour-main .classic {
+  background: url("../img/classic.png") rgba(0, 0, 0, 0.2);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+.tour-main .silver {
+  background: url("../img/silver.png") rgba(0, 0, 0, 0.2);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+.tour-main .gold {
+  background: url("../img/gold.png") rgba(0, 0, 0, 0.2);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+.tour-main .classic:hover {
+  background: url("../img/classic.png") rgba(0, 0, 0, 0);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+.tour-main .silver:hover {
+  background: url("../img/silver.png") rgba(0, 0, 0, 0);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+.tour-main .gold:hover {
+  background: url("../img/gold.png") rgba(0, 0, 0, 0.1);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+/* contact us */
+.contact-page {
+  height: 100vh;
+  background-image: url("../img/bg1-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contact-main {
+  height: 100vh;
+  background-color: #fff;
+}
+
+.con-top .text-shadow1 {
+  color: #000;
+  opacity: 0.2;
+  font-family: Montserrat;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 56px;
+}
+
+.con-top h2 {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 32px;
+  margin-top: -38px;
+}
+
+.contact {
+  height: 45px;
+  width: 100%;
+  margin-bottom: 15px;
+  border: 1px solid #afc3c9;
+  box-sizing: border-box;
+  border-radius: 30px;
+  padding-left: 15px;
+}
+.contact:focus {
+  outline: none;
+}
+.contact-textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  border: 1px solid #afc3c9;
+  box-sizing: border-box;
+  border-radius: 30px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+.contact-textarea:focus {
+  outline: none;
+}
+label {
+  color: grey;
+  font-size: 18px;
+}
+
+@media (max-width: 600px) {
+  .myNav {
+    padding: 16px 0;
+  }
+
+  .ab-footer {
+    display: none;
+  }
+  .ab-content {
+    height: 85vh;
+  }
+  .ab-heading {
+    height: 15vh;
+  }
+  .ab-heading .text-shadow1 {
+    font-size: 28px;
+    margin: 0;
+  }
+  .ab-heading h2 {
+    font-size: 24px;
+    margin-top: -16px;
+  }
+  .ab-footer .num {
+    font-size: 36px;
+    height: 50px;
+  }
+  .ab-footer .sub-text {
+    font-size: 14px;
+  }
+
+  .ab-content .text {
+    font-size: 12px;
+  }
+
+  /* UZBTOP */
+  .uz-top {
+    height: 15vh;
+  }
+
+  .uz-top .text-shadow1 {
+    font-size: 22px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .uz-top h2 {
+    font-size: 18px;
+    margin-top: -14px;
+  }
+
+  .uz-content img {
+    height: 100%;
+    max-width: 600px;
+    width: 100%;
+  }
+  .uz-content {
+    max-height: 810px;
+    height: 85vh;
+  }
+  .uz-content .inner .text {
+    font-size: 12px;
+    line-height: 1.7em;
+    padding: 10px 20px;
+    text-align: justify;
+  }
+  .uz-content .inner .mybtn {
+    width: 170px;
+    font-size: 12px;
+    margin: 10px auto;
+  }
+
+  .uz-content .inner hr {
+    display: none;
+  }
+
+  /* ADDITIONAL INFO */
+  .tr-header {
+    height: 15vh;
+    padding: 0 20px;
+  }
+
+  .tr-header .text {
+    text-align: center;
+    font-size: 28px;
+    margin-top: 20px;
+  }
+
+  .tr-header .text1 {
+    display: none;
+  }
+
+  .tr-content {
+    height: 85vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .tr-content .bg-text {
+    font-size: 50px;
+  }
+
+  .tr-content .my-card {
+    padding: 0 15px !important;
+    max-height: 220px;
+    margin: auto;
+    max-width: 270px;
+    min-width: 120px;
+    margin-bottom: 20px;
+    width: 170px !important;
+  }
+
+  .tr-content .cards {
+    margin-top: 0%;
+  }
+  .tr-content .cards .row {
+    padding: 0;
+  }
+
+  .tr-content .my-card .logo-card {
+    display: block;
+    text-align: center;
+    padding: 16px 0;
+    font-size: 12px;
+    padding-bottom: 15px;
+  }
+  .tr-content .my-card .heading {
+    font-size: 14px;
+    padding-bottom: 8px;
+  }
+  .tr-content .my-card .text {
+    font-size: 8px;
+    padding-bottom: 10px;
+  }
+  .tr-content .my-card .more {
+    font-size: 8px;
+    padding-bottom: 10px;
+  }
+
+  .tr-content .my-card .more img {
+    width: 3px;
+    margin-left: 6px;
+  }
+
+  /* TOUR */
+  .tour-top {
+    height: 15vh;
+  }
+
+  .tour-top .text-shadow1 {
+    color: #8edb92;
+    font-family: Montserrat;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 48px;
+    letter-spacing: 1px;
+    text-shadow: 0 0 15px #000;
+    margin: 0;
+  }
+  .tour-top h2 {
+    font-size: 32px;
+    margin-top: -24px;
+  }
+
+  .tour-main {
+    height: 85vh;
+    padding: 0 10%;
+  }
+
+  .glider-next {
+    right: -30px;
+    left: auto;
+  }
+  .glider-prev {
+    left: -30px;
+    right: auto;
+  }
+
+  .con-top .text-shadow1 {
+    color: #000;
+    opacity: 0.2;
+    font-family: Montserrat;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 32px;
+    margin: 0;
+  }
+
+  .con-top h2 {
+    font-family: "Playfair Display";
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-top: -18px;
+  }
+}
+
+/* contact  us */
+
+.contacts a {
+  color: grey;
+  font-size: 25px;
+  text-decoration: none;
+  font-weight: 400;
+}
+.contacts a:hover {
+  text-decoration: none;
+  color: grey;
+}
+
+.fas {
+  color: grey;
+  font-size: 18px;
+  padding-right: 10px;
+}
+
+.social {
+  text-align: center;
+  padding-top: 55px;
+  font-size: 30px;
+  color: grey;
+}
+
+.social-icon {
+  text-align: center;
+  font-size: 25px;
+}
+
+.social-icon i {
+  padding-right: 10px;
+  color: grey;
+}
+
+#ScrollTop {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  font-size: 22px;
+  width: 50px;
+  height: 50px;
+  background: #afc3c9;
+  color: rgba(255, 255, 255, 1);
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+}
+#ScrollTop:focus {
+  outline: none;
+}
+#ScrollTop i {
+  padding-left: 15px;
+}
+
