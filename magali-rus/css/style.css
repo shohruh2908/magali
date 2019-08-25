@@ -427,7 +427,7 @@ nav a:hover {
 .tour-card .tour-heading {
   color: #fff;
   text-transform: uppercase;
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 700;
   letter-spacing: 1px;
   font-family: Gilroy;
@@ -843,6 +843,5 @@ label {
   outline: none;
 }
 #ScrollTop i {
-  padding-left: 15px;
+  padding-left: 10px;
 }
-
