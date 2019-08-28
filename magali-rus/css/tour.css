@@ -10,6 +10,13 @@ body{
     /* background: #E5E5E5; */
 }
 
+.brand {
+    font-size: 32px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    color: #fff;
+    width: 100px;
+  }
 
 
 .container{
