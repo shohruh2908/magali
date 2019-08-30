@@ -423,18 +423,31 @@
   font-size: 22px;
   width: 50px;
   height: 50px;
-  background: #afc3c9;
-  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.1);
   border: none;
   cursor: pointer;
   border-radius: 30px;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#ScrollTop:hover{
+  background-color: #fff;
+  text-decoration: none;
+}
+#ScrollTop:hover i{
+  color: #333;
 }
 #ScrollTop:focus {
   outline: none;
 }
 #ScrollTop i {
   padding-left: 15px;
+  color: rgba(255, 255, 255, 1);
 }
+
 
 .downloadbtn {
   margin-top: 200px;

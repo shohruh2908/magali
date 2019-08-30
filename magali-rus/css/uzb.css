@@ -29,7 +29,7 @@
   font-size: 16px;
   display: block;
   text-align: center;
-  /* margin-left: 2px; */
+  margin-left: 2px;
   /* font-weight: 200; */
   line-height: 40px;
   width: 100%;
@@ -42,6 +42,9 @@
   color: #333;
   text-decoration: none;
 }
+
+/* arrow top */
+
 
 .header h1 {
   font-family: Roboto;
@@ -423,11 +426,13 @@
   font-size: 22px;
   width: 50px;
   height: 50px;
-  background: #afc3c9;
+  background-color: rgba(255, 255, 255, 0.1);
   color: rgba(255, 255, 255, 1);
   border: none;
   cursor: pointer;
   border-radius: 30px;
+  transition: all 0.3s ease;
+
 }
 #ScrollTop:focus {
   outline: none;
@@ -435,3 +440,4 @@
 #ScrollTop i {
   padding-left: 15px;
 }
+
