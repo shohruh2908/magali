@@ -1,5 +1,5 @@
 .uzb-top {
-  background: url("../img/uzb.jpg");
+  background: url("../img/uzb-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -49,7 +49,7 @@
   font-weight: 800;
   font-size: 112px;
   line-height: 196px;
-  color: #ffffff;
+  color: #fff;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-transform: uppercase;
 }
@@ -274,7 +274,7 @@
   box-shadow: 0 0 10px #f1f1f1;
   width: 28%;
   /* height: 100%; */
-  height: 380px;
+  height: 270px;
   transition: all 0.2s ease;
 }
 .transport-card:hover {
@@ -434,4 +434,8 @@
 }
 #ScrollTop i {
   padding-left: 15px;
+}
+
+.downloadbtn {
+  margin-top: 200px;
 }

@@ -797,7 +797,7 @@ label {
 /* contact  us */
 
 .contacts a {
-  color: grey;
+  color: #005AA7;
   font-size: 25px;
   text-decoration: none;
   font-weight: 400;
@@ -808,7 +808,7 @@ label {
 }
 
 .fas {
-  color: grey;
+  color: #2c3e50;
   font-size: 18px;
   padding-right: 10px;
 }
@@ -817,7 +817,7 @@ label {
   text-align: center;
   padding-top: 55px;
   font-size: 30px;
-  color: grey;
+  color: #005AA7;
 }
 
 .social-icon {
@@ -827,7 +827,7 @@ label {
 
 .social-icon i {
   padding-right: 10px;
-  color: grey;
+  color: #2c3e50;
 }
 
 #ScrollTop {
@@ -849,3 +849,4 @@ label {
 #ScrollTop i {
   padding-left: 10px;
 }
+
