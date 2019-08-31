@@ -1,4 +1,4 @@
-@font-face {
+jpg@font-face {
   font-family: "Gilroy";
   src: url("/font/Gilroy-ExtraBold.woff") format("woff");
 }
@@ -239,7 +239,7 @@ nav a:hover {
 
 /* Additional info */
 .add-info {
-  background-image: url("../img/uzbekistan_background.png");
+  background-image: url("../img/uzbekistan_background.jpg");
   background-repeat: no-repeat;
   background-position: left top;
   background-size: cover;
@@ -309,9 +309,9 @@ nav a:hover {
 .tr-content .my-card {
   /* max-height: 320px; */
   padding: 0 15px !important;
-  max-height: 370px;
-  margin: auto;
+  max-height: 420px;
   background: url("../img/dev.jpg") rgba(0, 0, 0, 0.56);
+  background-position: 50% ;
   background-size: cover;
   background-blend-mode: multiply;
   color: #fff;
@@ -319,6 +319,7 @@ nav a:hover {
   z-index: 2;
   max-width: 270px;
   min-width: 190px;
+  margin: 0 10px;
 }
 .tr-content .my-card:hover {
   background: url("../img/dev.jpg") rgba(0, 0, 0, 0.1);
@@ -327,6 +328,8 @@ nav a:hover {
   transform: scale(1.01);
   z-index: 5;
   box-shadow: 0 0 10px 0px rgb(63, 63, 63);
+  background-position: 50% ;
+
 }
 .tr-content .my-card .logo-card {
   display: block;
@@ -503,37 +506,37 @@ nav a:hover {
 }
 
 .tour-main .classic {
-  background: url("../img/classic.png") rgba(0, 0, 0, 0.2);
+  background: url("../img/classic.jpg") rgba(0, 0, 0, 0.2);
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: multiply;
 }
 .tour-main .silver {
-  background: url("../img/silver.png") rgba(0, 0, 0, 0.2);
+  background: url("../img/silver.jpg") rgba(0, 0, 0, 0.2);
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: multiply;
 }
 .tour-main .gold {
-  background: url("../img/gold.png") rgba(0, 0, 0, 0.2);
+  background: url("../img/gold.jpg") rgba(0, 0, 0, 0.2);
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: multiply;
 }
 .tour-main .classic:hover {
-  background: url("../img/classic.png") rgba(0, 0, 0, 0);
+  background: url("../img/classic.jpg") rgba(0, 0, 0, 0);
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: multiply;
 }
 .tour-main .silver:hover {
-  background: url("../img/silver.png") rgba(0, 0, 0, 0);
+  background: url("../img/silver.jpg") rgba(0, 0, 0, 0);
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: multiply;
 }
 .tour-main .gold:hover {
-  background: url("../img/gold.png") rgba(0, 0, 0, 0.1);
+  background: url("../img/gold.jpg") rgba(0, 0, 0, 0.1);
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: multiply;
