@@ -10,7 +10,8 @@ jpg@font-face {
 }
 
 #top {
-  background-image: url("../img/image.png");
+  background: url("../img/image.jpg") rgba(0, 0, 0, 0.05);
+  background-blend-mode: multiply;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -337,6 +338,7 @@ nav a:hover {
   padding: 25px 0;
   font-size: 24px;
   padding-bottom: 15px;
+  color: #fff;
 }
 .tr-content .my-card .heading {
   display: block;
