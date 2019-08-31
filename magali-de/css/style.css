@@ -560,9 +560,9 @@ nav a:hover {
 /* contact us */
 .contact-page {
   height: 100vh;
-  background-image: url("../img/bg1-1.png");
+  /* background-image: url("../img/bg1_1.png");
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 
 
@@ -692,7 +692,7 @@ footer{
   }
 
   .uz-top h2 {
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 0;
   }
 
@@ -745,7 +745,7 @@ footer{
   }
 
   .tr-content .bg-text {
-    font-size: 50px;
+    font-size: 40px;
   }
 
   .tr-content .my-card {
