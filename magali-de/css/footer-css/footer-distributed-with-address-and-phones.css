@@ -143,6 +143,19 @@
 	margin-bottom: 5px;
 }
 
+.footer-icons a{
+    color: #ddd;
+    transition: all 0.2s ease;
+}
+
+.footer-icons i{
+    color: #aaa;
+}
+
+.footer-icons a:hover i{
+    color: #fff;
+}
+
 /* If you don't want the footer to be responsive, remove these media queries */
 
 @media (max-width: 880px) {
