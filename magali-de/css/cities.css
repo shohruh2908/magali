@@ -1,289 +1,283 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: Montserrat;
-    color: #646464;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat;
+  color: #646464;
 }
 
-body{
-    background-color: rgb(248, 248, 248);
+body {
+  background-color: rgb(248, 248, 248);
 }
 
-.city{
-    max-width: 1920px;
-    width: 100%;
-    margin: 0 auto;
+.city {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
 }
 
-.header{
-    max-height: 416px;
-    height: 40vh;
-    position: relative;
-    background: url('../img/sam.jpg') rgba(0, 0, 0, 0.65);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-blend-mode: multiply;
+.header {
+  max-height: 416px;
+  height: 40vh;
+  position: relative;
+  background: url("../img/sam.jpg") rgba(0, 0, 0, 0.65);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
 }
 
-.header h1{
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 800;
-    font-size: 80px;
-    position: absolute;
-    left: 120px;
-    bottom: 38px;
-    text-shadow: 0 5px 8px #000;        
+.header h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 80px;
+  position: absolute;
+  left: 120px;
+  bottom: 38px;
+  text-shadow: 0 5px 8px #000;
 }
 
-.main{
-    display: flex;
-    height: 100%;
-    background-color: #fff;
-    flex-direction: column;
+.main {
+  display: flex;
+  height: 100%;
+  background-color: #fff;
+  flex-direction: column;
 }
 
-.left{
-    flex: 2;
-    padding: 0 6%;
+.left {
+  flex: 2;
+  padding: 0 6%;
 }
 
-.left h2{
-    margin-top: 48px;
-    margin-bottom: 50px;
-    font-weight: 900;
-    font-size: 27px;
-    color:#444;
-    font-family: sans-serif;
+.left h2 {
+  margin-top: 48px;
+  margin-bottom: 50px;
+  font-weight: 900;
+  font-size: 27px;
+  color: #444;
+  font-family: sans-serif;
 }
 
-.left .text{
-    text-align: justify;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 250%;
-    margin-bottom: 50px;
+.left .text {
+  text-align: justify;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 250%;
+  margin-bottom: 50px;
 }
 
-.right{
-    flex: 1;
-    z-index: 2;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center
+.right {
+  flex: 1;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.right .myCard{
-    max-width: 380px;
-    min-height: 534px;
-    background-color: #000;
-    padding: 0;
-    margin-bottom: 113px;
-    margin-right: 15px;
-    transition: all 0.2s ease-in-out;
+.right .myCard {
+  max-width: 380px;
+  min-height: 534px;
+  background-color: #000;
+  padding: 0;
+  margin-bottom: 113px;
+  margin-right: 15px;
+  transition: all 0.2s ease-in-out;
 }
-.right .myCard:hover{
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.26);
-    
-}
-
-.right .myCard img{
-    display: block;
-    width: 100%;
+.right .myCard:hover {
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.26);
 }
 
-.myCard h3{
-    color: #fff;
-    font-size: 20px;
-    padding: 20px 30px;
-    margin: 0;
-    font-weight: 800;
-    text-transform: uppercase;
+.right .myCard img {
+  display: block;
+  width: 100%;
+  height: 220px;
 }
 
-.myCard-text{
-    margin: 0;
-    padding: 0 30px;
-    padding-bottom: 30px;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 25px;
-    text-align: justify;
-    color: rgb(180, 180, 180);
+.myCard h3 {
+  color: #fff;
+  font-size: 20px;
+  padding: 20px 30px;
+  margin: 0;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
-
-
-.hotel{
-    padding-bottom: 80px;
-    background-color: #fff;
-    position: relative;
-    z-index: 1;
+.myCard-text {
+  margin: 0;
+  padding: 0 30px;
+  padding-bottom: 30px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: justify;
+  color: rgb(180, 180, 180);
 }
 
-
-.hotel h1{
-    color: #000;
-    text-transform: uppercase;
-    font-weight: 800;
-    font-size: 80px;
-    text-align: right;
-    padding-top: 80px;
-    padding-right: 120px;
-    margin: 0;
-    margin-bottom: 50px;
-    z-index: 3;
+.hotel {
+  padding-bottom: 80px;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
 }
 
-
-
-
-
-.hotel-content{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    z-index: 1;
+.hotel h1 {
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 80px;
+  text-align: right;
+  padding-top: 80px;
+  padding-right: 120px;
+  margin: 0;
+  margin-bottom: 50px;
+  z-index: 3;
 }
 
-.hotel-card{
-    max-width: 350px;
-    width: 70%;
-    max-height: 534px;
-    background-color: #fff;
-    padding: 0;
-    margin-bottom: 50px;
-    box-shadow: 0 0 10px #eee;
-    transition: all 0.3s ease;
-    margin-right: 10px;
+.hotel-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  z-index: 1;
 }
 
-.hotel-card:hover{
-    box-shadow: 0 0 25px #ddd;
+.hotel-card {
+  max-width: 350px;
+  width: 70%;
+  max-height: 534px;
+  background-color: #fff;
+  padding: 0;
+  margin-bottom: 50px;
+  box-shadow: 0 0 10px #eee;
+  transition: all 0.3s ease;
+  margin-right: 10px;
 }
 
-.hotel-card img{
-    display: block;
-    width: 100%;
-}
-
-.hotel-card h3{
-    color: #000;
-    font-size: 20px;
-    padding: 20px 30px;
-    margin: 0;
-    font-weight: 800;
-    text-transform: uppercase;
-}
-
-.hotel-card-text{
-    margin: 0;
-    padding: 0 30px;
-    padding-bottom: 20px;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 25px;
-    text-align: justify;
-    color: rgb(97, 97, 97);
-}
-
-.hotel-link{
-    display: block;
-    text-align: center;
-    padding-bottom: 30px;
-    font-weight: 600;
-    color: rgb(7, 133, 14);
-    text-decoration: none;
-}
-
-.hotel-link i{
-    color: rgb(7, 133, 14);
-}
-
-.hotel-link:hover, .hotel-link:hover i{
-    text-decoration: none;
-    color: rgb(3, 49, 3);
-}
-
-.footer-icons a{
-    color: #ddd;
-    transition: all 0.2s ease;
-}
-
-.footer-icons i{
-    color: #aaa;
-}
-
-.footer-icons a:hover i{
-    color: #fff;
-}
-
-.back{
-    position: absolute;
-    top: 30px;
-    left: 6%;
-    z-index: 3;
-}
-
-.back img{
-    width: 100px!important;
+.hotel-card:hover {
+  box-shadow: 0 0 25px #ddd;
 }
 
 .hotel-card img {
-    width: 300px;
-    height: 180px;
-} 
+  display: block;
+  width: 100%;
+}
 
+.hotel-card h3 {
+  color: #000;
+  font-size: 20px;
+  padding: 20px 30px;
+  margin: 0;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.hotel-card-text {
+  margin: 0;
+  padding: 0 30px;
+  padding-bottom: 20px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: justify;
+  color: rgb(97, 97, 97);
+}
+
+.hotel-link {
+  display: block;
+  text-align: center;
+  padding-bottom: 30px;
+  font-weight: 600;
+  color: rgb(7, 133, 14);
+  text-decoration: none;
+}
+
+.hotel-link i {
+  color: rgb(7, 133, 14);
+}
+
+.hotel-link:hover,
+.hotel-link:hover i {
+  text-decoration: none;
+  color: rgb(3, 49, 3);
+}
+
+.footer-icons a {
+  color: #ddd;
+  transition: all 0.2s ease;
+}
+
+.footer-icons i {
+  color: #aaa;
+}
+
+.footer-icons a:hover i {
+  color: #fff;
+}
+
+.back {
+  position: absolute;
+  top: 30px;
+  left: 6%;
+  z-index: 3;
+}
+
+.back img {
+  width: 100px !important;
+}
+
+.hotel-card img {
+  width: 300px;
+  height: 180px;
+}
 
 @media (max-width: 600px) {
-    .header{
-        background-position: 50%;
-        height: 30vh;
-    }
-	.header h1{ 
-        font-size: 42px;
-        position: absolute;
-        left: 20px;
-        bottom: 38px;   
-    }
-    .back img{
-        width: 60px!important;
-    }
+  .header {
+    background-position: 50%;
+    height: 30vh;
+  }
+  .header h1 {
+    font-size: 42px;
+    position: absolute;
+    left: 20px;
+    bottom: 38px;
+  }
+  .back img {
+    width: 60px !important;
+  }
 
-    .left{
-        padding: 50px 6%;
-    }
+  .left {
+    padding: 50px 6%;
+  }
 
-    .left .text{
-        font-size: 14px;
-        margin-bottom: 50px;
-    }
+  .left .text {
+    font-size: 14px;
+    margin-bottom: 50px;
+  }
 
-    .right .myCard{
-        max-width: 320px;
-        width: 90%;
-        min-height: 534px;
-        background-color: #000;
-        padding: 0;
-        margin-bottom: 30px;
-        margin-right: 0;
-        transition: all 0.2s ease-in-out;
-    }
-    .hotel h1{
-        color: #000;
-        text-transform: uppercase;
-        font-weight: 800;
-        font-size: 42px;
-        text-align: center;
-        padding-top: 80px;
-        padding-right: 0;
-        margin: 0;
-        margin-bottom: 50px;
-        z-index: 3;
-    }
-    .hotel-card{
-        padding: 0;
-        margin-bottom: 30px;
-    }
+  .right .myCard {
+    max-width: 320px;
+    width: 90%;
+    min-height: 534px;
+    background-color: #000;
+    padding: 0;
+    margin-bottom: 30px;
+    margin-right: 0;
+    transition: all 0.2s ease-in-out;
+  }
+  .hotel h1 {
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 42px;
+    text-align: center;
+    padding-top: 80px;
+    padding-right: 0;
+    margin: 0;
+    margin-bottom: 50px;
+    z-index: 3;
+  }
+  .hotel-card {
+    padding: 0;
+    margin-bottom: 30px;
+  }
 }
+
