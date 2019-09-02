@@ -56,10 +56,11 @@
                         <img src="img/LOGO_MO.png" alt="" width="100px" />
                     </a>
                     <nav class="my-2 my-md-0 mr-md-5">
-                        <a class="p-2 vs-anchor" href="#view-2">Über uns</a>
-                        <a class="p-2 vs-anchor" href="#view-3">Usbekistan</a>
-                        <a class="p-2 vs-anchor" href="#view-5">Reisen</a>
-                        <a class="p-2 vs-anchor" href="#view-6">Kontakt</a>
+                        <a class="p-2 vs-anchor" href="#about">Über uns</a>
+                        <a class="p-2 vs-anchor" href="#uzbekistan">Usbekistan</a>
+                        <a class="p-2 vs-anchor" href="#culture">Kultur</a>
+                        <a class="p-2 vs-anchor" href="#tours">Reisen</a>
+                        <a class="p-2 vs-anchor" href="#contact">Kontakt</a>
                     </nav>
                     <div class="d-flex">
                         <a
@@ -195,7 +196,7 @@
                     <img src="img/uzbekistan_1.png" alt="" />
                 </div>
             </div>
-            <div vs-anchor="view-4" class="mainview blocks add-info">
+            <div id="culture" vs-anchor="view-4" class="mainview blocks add-info">
                 <div class="tr-header">
                     <div class="text">
                         WEITERE INFORMATIONEN
@@ -366,7 +367,7 @@
                 </div>
             </div>
 
-            <div vs-anchor="view-5" class="mainview blocks tours">
+            <div id="tours" vs-anchor="view-5" class="mainview blocks tours">
                 <div class="text-center py-5 tour-top">
                     <h1 class="text-shadow1">Reisen</h1>
                     <h2>Reisen</h2>
@@ -695,7 +696,7 @@
                 </div>
             </div>
 
-            <div vs-anchor="view-6" class="mainview blocks contact-page">
+            <div id="contact" vs-anchor="view-6" class="mainview blocks contact-page">
                 <div class="container">
                     <div class="text-center contact-header">
                         <h1 class="text-shadow1">Kontakt</h1>
@@ -796,6 +797,20 @@
                 }
             });
         </script>
-        
+        <script>
+            $(document).ready(function() {
+                $(".uzb-header a[href^='#']").click(function(e) {
+                    e.preventDefault();
+
+                    var position = $($(this).attr('href')).offset().top;
+
+                    $('body, html').animate(
+                        {
+                            scrollTop: position
+                        }, 1000
+                    );
+                });
+            });
+        </script>
     </body>
 </html>
