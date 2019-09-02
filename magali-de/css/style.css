@@ -1003,7 +1003,6 @@ footer{
     padding-top: 1px;
   }
 
-
   .city-main{
     padding: 30px 10px!important;
   }
@@ -1015,7 +1014,10 @@ footer{
     background-color: #fff;
     padding: 0;
     margin-bottom: 20px!important;
-    box-shadow: 0 0 10px #eee;
+    -webkit-box-shadow: 0 0 10px #eee;
+            box-shadow: 0 0 10px #eee;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
     margin-right: 10px;
     position: relative;
@@ -1031,6 +1033,8 @@ footer{
     color: #fff;
     text-transform: uppercase;
     font-size: 14px!important;
+    -webkit-transition: 0.2s all ease-in-out;
+    -o-transition: 0.2s all ease-in-out;
     transition: 0.2s all ease-in-out;
     font-weight: bold;
   }
@@ -1045,16 +1049,25 @@ footer{
 
 .city-header{
   height: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0 100px;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background: url('../img/bg1_1.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
   color: #000;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .city-header h1{
   font-family: serif;
@@ -1073,9 +1086,14 @@ footer{
 
 .city-main{
   min-height: 85vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding:  100px 50px;
 }
 
@@ -1086,13 +1104,17 @@ footer{
   background-color: #fff;
   padding: 0;
   margin-bottom: 50px;
-  box-shadow: 0 0 10px #eee;
+  -webkit-box-shadow: 0 0 10px #eee;
+          box-shadow: 0 0 10px #eee;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   margin-right: 10px;
   position: relative;
 }
 .city-card:hover{
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.336);
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.336);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.336);
 }
 
 .city-card img{
@@ -1100,6 +1122,7 @@ footer{
 }
 
 .city-card a{
+  display: block;
   position: absolute;
   width: 100%;
   padding: 20px 0;
@@ -1109,6 +1132,8 @@ footer{
   color: #fff;
   text-transform: uppercase;
   font-size: 24px;
+  -webkit-transition: 0.2s all ease-in-out;
+  -o-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
   font-weight: bold;
 }
@@ -1117,7 +1142,6 @@ footer{
   padding: 45px;
   text-decoration: none;
 }
-
 
 
 
