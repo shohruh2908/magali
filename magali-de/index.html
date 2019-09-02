@@ -59,6 +59,7 @@
                         <a class="p-2 vs-anchor" href="#about">Über uns</a>
                         <a class="p-2 vs-anchor" href="#uzbekistan">Usbekistan</a>
                         <a class="p-2 vs-anchor" href="#culture">Kultur</a>
+                        <a class="p-2 vs-anchor" href="#cities">Städte</a>
                         <a class="p-2 vs-anchor" href="#tours">Reisen</a>
                         <a class="p-2 vs-anchor" href="#contact">Kontakt</a>
                     </nav>
@@ -86,7 +87,7 @@
                 >
                     <h1> Uzbekistan </h1>
                     <a
-                        href="#view-2"
+                        href="#about"
                         class="btn btn-outline-light btn-lg px-5 vs-anchor"
                     >
                         ENTDECKEN
@@ -285,7 +286,7 @@
                 </div>
             </div>
 
-            <div class="cities">
+            <div class="cities" id="cities"> 
                 <div class="city-header">
                     <h1 class="tx-bg">Cities</h1>
                     <h1>Cities</h1>
@@ -775,7 +776,7 @@
                 </footer>
             </div>
         </div>
-        <a href="#view-1" id="ScrollTop"
+        <a href="#top" id="ScrollTop"
             ><i class="fas fa-chevron-up p-0"></i
         ></a>
 
@@ -798,19 +799,28 @@
             });
         </script>
         <script>
-            $(document).ready(function() {
-                $(".uzb-header a[href^='#']").click(function(e) {
-                    e.preventDefault();
-
-                    var position = $($(this).attr('href')).offset().top;
-
-                    $('body, html').animate(
-                        {
-                            scrollTop: position
-                        }, 1000
-                    );
+                $(document).ready(function() {
+                    $('.tab-list').on('click', '.tab', function(e) {
+                        e.preventDefault();
+    
+                        $('.tab').removeClass('active');
+                        $('.tab-content').removeClass('show');
+                        $(this).addClass('active');
+                        $($(this).attr('href')).addClass('show');
+                    });
+    
+                    $("a[href^='#']").click(function(e) {
+                        e.preventDefault();
+    
+                        var position = $($(this).attr('href')).offset().top;
+    
+                        $('body, html').animate(
+                            {
+                                scrollTop: position
+                            }, 1000
+                        );
+                    });
                 });
-            });
-        </script>
+            </script>
     </body>
 </html>
