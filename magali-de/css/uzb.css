@@ -730,3 +730,8 @@ body{
 
   
 }
+
+.transport-card img {
+  width: 300px;
+  height: 180px;
+}
