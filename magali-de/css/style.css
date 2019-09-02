@@ -363,7 +363,7 @@ nav a:hover {
   /* max-height: 320px; */
   padding: 0 15px !important;
   /* max-height: 420px; */
-  background: url("../img/dev.jpg") rgba(0, 0, 0, 0.56);
+  /* background: url("../img/dev.jpg") rgba(0, 0, 0, 0.56); */
   background-position: 50% ;
   background-size: cover;
   background-blend-mode: multiply;
@@ -376,8 +376,58 @@ nav a:hover {
   min-width: 190px;
   margin: 0 10px;
 }
-.tr-content .my-card:hover {
+.tr-content .essen {
+  background: url("../img/essen.jpg") rgba(0, 0, 0, 0.56);
+}
+.tr-content .essen:hover {
+  background: url("../img/essen.jpg") rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-blend-mode: multiply;
+  -webkit-transform: scale(1.01);
+      -ms-transform: scale(1.01);
+          transform: scale(1.01);
+  z-index: 5;
+  -webkit-box-shadow: 0 0 10px 0px rgb(63, 63, 63);
+          box-shadow: 0 0 10px 0px rgb(63, 63, 63);
+  background-position: 50% ;
+
+}
+.tr-content .kultur {
+  background: url("../img/dev.jpg") rgba(0, 0, 0, 0.56);
+}
+.tr-content .kultur:hover {
   background: url("../img/dev.jpg") rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-blend-mode: multiply;
+  -webkit-transform: scale(1.01);
+      -ms-transform: scale(1.01);
+          transform: scale(1.01);
+  z-index: 5;
+  -webkit-box-shadow: 0 0 10px 0px rgb(63, 63, 63);
+          box-shadow: 0 0 10px 0px rgb(63, 63, 63);
+  background-position: 50% ;
+
+}
+.tr-content .visum {
+  background: url("../img/visum.jpg") rgba(0, 0, 0, 0.56);
+}
+.tr-content .visum:hover {
+  background: url("../img/visum.jpg") rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-blend-mode: multiply;
+  -webkit-transform: scale(1.01);
+      -ms-transform: scale(1.01);
+          transform: scale(1.01);
+  z-index: 5;
+  -webkit-box-shadow: 0 0 10px 0px rgb(63, 63, 63);
+          box-shadow: 0 0 10px 0px rgb(63, 63, 63);
+  background-position: 50% ;
+}
+.tr-content .transport {
+  background: url("../img/transport.jpg") rgba(0, 0, 0, 0.56);
+}
+.tr-content .transport:hover {
+  background: url("../img/transport.jpg") rgba(0, 0, 0, 0.1);
   background-size: cover;
   background-blend-mode: multiply;
   -webkit-transform: scale(1.01);
@@ -1119,6 +1169,7 @@ footer{
 
 .city-card img{
   width: 100%;
+  height: 100%;
 }
 
 .city-card a{
