@@ -35,7 +35,7 @@ body{
 }
 
 .uz-nav .logo img{
-  width: 150px;
+  width: 100px;
 }
 
 .uz-nav .links{
@@ -298,7 +298,7 @@ body{
 
 .transport-card{
   max-width: 350px;
-  width: 70%;
+  width: 25%;
   max-height: 534px;
   background-color: #fff;
   padding: 0;
@@ -732,6 +732,5 @@ body{
 }
 
 .transport-card img {
-  width: 300px;
-  height: 180px;
+    height: 180px;
 }

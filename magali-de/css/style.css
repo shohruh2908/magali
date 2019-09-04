@@ -121,7 +121,7 @@ nav a:hover {
 
 .ab-content {
   /* max-height: 540px; */
-  height: 80vh;
+  min-height: 100vh;
 }
 
 .ab-content .text {
@@ -136,7 +136,7 @@ nav a:hover {
 
 .left-content {
   position: relative;
-  height: 100%;
+  /* height: 100%; */
 }
 .ab-content img {
   max-height: 570px;
@@ -156,29 +156,7 @@ nav a:hover {
   background-position: left top;
 }
 
-.ab-footer .container,
-.ab-footer .row {
-  position: relative;
-  height: 100%;
-}
 
-.ab-footer .num {
-  font-weight: 600;
-  font-size: 56px;
-  font-family: "Montserrat";
-  height: 70px;
-  /* letter-spacing: 1px; */
-}
-.ab-footer .num span {
-  font-weight: normal;
-}
-
-.ab-footer .sub-text {
-  font-weight: 300;
-  font-family: "Roboto";
-  line-height: 1.3;
-  font-size: 18px;
-}
 
 /* Uzbekistan */
 .uz-top {
@@ -211,7 +189,7 @@ nav a:hover {
 
 .uz-content {
   /* max-height: 810px; */
-  height: 80vh;
+  min-height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -364,9 +342,7 @@ nav a:hover {
   padding: 0 15px !important;
   /* max-height: 420px; */
   /* background: url("../img/dev.jpg") rgba(0, 0, 0, 0.56); */
-  background-position: 50% ;
-  background-size: cover;
-  background-blend-mode: multiply;
+  
   color: #fff;
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -378,6 +354,10 @@ nav a:hover {
 }
 .tr-content .essen {
   background: url("../img/essen.jpg") rgba(0, 0, 0, 0.56);
+  background-position: 50% ;
+  background-size: cover;
+  background-blend-mode: multiply;
+
 }
 .tr-content .essen:hover {
   background: url("../img/essen.jpg") rgba(0, 0, 0, 0.1);
@@ -394,6 +374,10 @@ nav a:hover {
 }
 .tr-content .kultur {
   background: url("../img/dev.jpg") rgba(0, 0, 0, 0.56);
+  background-position: 50% ;
+  background-size: cover;
+  background-blend-mode: multiply;
+
 }
 .tr-content .kultur:hover {
   background: url("../img/dev.jpg") rgba(0, 0, 0, 0.1);
@@ -410,9 +394,15 @@ nav a:hover {
 }
 .tr-content .visum {
   background: url("../img/visum.jpg") rgba(0, 0, 0, 0.56);
+  background-position: 50% ;
+  background-size: cover;
+  background-blend-mode: multiply;
+
 }
 .tr-content .visum:hover {
   background: url("../img/visum.jpg") rgba(0, 0, 0, 0.1);
+  background-position: 50%;
+
   background-size: cover;
   background-blend-mode: multiply;
   -webkit-transform: scale(1.01);
@@ -421,10 +411,15 @@ nav a:hover {
   z-index: 5;
   -webkit-box-shadow: 0 0 10px 0px rgb(63, 63, 63);
           box-shadow: 0 0 10px 0px rgb(63, 63, 63);
-  background-position: 50% ;
+  background-size: cover;
+  background-blend-mode: multiply;
 }
 .tr-content .transport {
   background: url("../img/transport.jpg") rgba(0, 0, 0, 0.56);
+  background-position: 50% ;
+  background-size: cover;
+  background-blend-mode: multiply;
+
 }
 .tr-content .transport:hover {
   background: url("../img/transport.jpg") rgba(0, 0, 0, 0.1);
@@ -728,17 +723,18 @@ nav a:hover {
 
 .contact-mail .form-inline{
   width: 60%;
+  display: flex;
+  justify-content: space-around;
 }
 .contact-mail .form-inline input{
-  width:70%;
-  padding: 30px;
+  width:38%;
+  padding: 26px;
   font-size: 18px;
 }
 .contact-mail .form-inline button{
-  padding: 16px;
-  font-size: 18px;
-  width: 28%;
-  margin-left: auto;
+  padding: 14px;
+  font-size: 16px;
+  width: 20%;
 }
 
 
@@ -765,6 +761,7 @@ footer{
     background-position: 40%;
   }
 
+  
 
 
 
@@ -801,6 +798,12 @@ footer{
   }
 
   /* UZBTOP */
+
+  .uzb{
+    min-height: 100vh;
+
+  }
+
   .uz-top {
     height: 10vh;
   }
@@ -810,21 +813,20 @@ footer{
   }
 
   .uz-top h2 {
-    font-size: 16px;
-    margin-top: 0;
+    font-size: 14px;
+    margin: 0;
   }
 
   .uz-content img {
 
     max-width: 600px;
     width: 250px;
-    height: 100%;
+    height: 230px;
     margin: auto;
     margin-top: 10px;
   }
   .uz-content {
-    max-height: 810px;
-    height: 90vh;
+    height: auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
@@ -833,6 +835,7 @@ footer{
 
   .uz-content .inner{
     width: 100%;
+    height: auto;
   }
   .uz-content .uz-photo{
     width: 100%;
@@ -880,6 +883,7 @@ footer{
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 0 2%;
   }
 
   .tr-content .bg-text {
@@ -891,8 +895,8 @@ footer{
     max-height: 240px;
     margin: 0;
     max-width: 270px;
-    min-width: 120px;
-    margin-bottom: 10px;
+    min-width: 150px;
+    margin-bottom: 0;
     width: 170px !important;
   }
 
@@ -901,6 +905,7 @@ footer{
   }
   .tr-content .cards .row {
     padding: 0;
+    margin: 0;
   }
 
   .tr-content .my-card .logo-card {
@@ -952,6 +957,44 @@ footer{
     height: 85vh;
     padding: 0 10%;
   }
+  .tour-main .classic {
+    background-color: #000;
+    background: url("../img/classic.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .tour-main .silver {
+    background-color: #000;
+    background: url("../img/silver.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .tour-main .gold {
+    background-color: #000;
+    background: url("../img/gold.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .tour-main .classic:hover {
+    background: url("../img/classic.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .tour-main .silver:hover {
+    background: url("../img/silver.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .tour-main .gold:hover {
+    background: url("../img/gold.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+
+
+
 
   .glider-next {
     right: -30px;
@@ -1025,24 +1068,25 @@ footer{
   
   .contact-mail .form-inline{
     width: 80%;
+    flex-direction: column;
   }
   .contact-mail .form-inline input{
     width:100%;
-    padding: 25px;
-    font-size: 18px;
+    padding: 18px;
+    font-size: 14px;
+    margin-bottom: 15px;
   }
   .contact-mail .form-inline button{
-    padding: 12px;
-    font-size: 18px;
+    padding: 8px;
+    font-size: 14px;
     width: 50%;
     margin: auto;
-    margin-top: 15px;
   }
   
   
   
   footer{
-    height: 60vh;
+    height: auto;
   }
   footer iframe{
     display: none;
@@ -1092,6 +1136,24 @@ footer{
     padding: 20px!important;
     text-decoration: none;
   }
+
+  .city-header h1{
+    font-family: serif;
+    font-size: 24px!important;
+    font-weight: bold;
+    margin-top: -24px!important;
+    font-family: "Playfair Display";
+  
+  }
+  .city-header .tx-bg{
+    margin-top: 18px!important;
+    font-size: 36px!important;
+    font-family: Montserrat;
+    color: #000;
+    opacity: 0.2;
+    margin: 0;
+  }
+  
 }
 
 
@@ -1121,12 +1183,14 @@ footer{
 }
 .city-header h1{
   font-family: serif;
-  font-size: 48px;
+  font-size: 38px;
   font-weight: bold;
-  margin-top: -36px;
+  margin-top: -32px;
+  font-family: "Playfair Display";
+
 }
 .city-header .tx-bg{
-  font-size: 62px;
+  font-size: 52px;
   font-family: Montserrat;
   color: #000;
   opacity: 0.2;
@@ -1168,6 +1232,7 @@ footer{
 }
 
 .city-card img{
+  position: relative;
   width: 100%;
   height: 100%;
 }
@@ -1203,6 +1268,7 @@ footer{
 
 
 #ScrollTop {
+  z-index: 10;
   position: fixed;
   bottom: 40px;
   right: 40px;
