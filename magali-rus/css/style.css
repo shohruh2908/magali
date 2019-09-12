@@ -1,16 +1,18 @@
-@font-face {
+jpg@font-face {
   font-family: "Gilroy";
   src: url("/font/Gilroy-ExtraBold.woff") format("woff");
 }
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 #top {
-  background-image: url("../img/image.png");
+  background: url("../img/image.jpg") rgba(0, 0, 0, 0.05);
+  background-blend-mode: multiply;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -19,7 +21,6 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
   color: #fff;
-  width: 100px;
 }
 .brand:hover {
   text-decoration: none;
@@ -28,6 +29,8 @@
 
 nav a {
   color: #fff;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
   transition: 0.2s;
 }
 nav a:hover {
@@ -63,7 +66,20 @@ nav a:hover {
   font-size: 14px;
   /* position: absolute; */
   letter-spacing: 3px;
-  box-shadow: 0px 0px 100px #707070;
+  -webkit-box-shadow: 0px 0px 100px #707070;
+          box-shadow: 0px 0px 100px #707070;
+}
+
+.header h1{
+  text-transform: uppercase;
+  margin: 0;
+  font-family: Montserrat;
+  font-weight: 700;
+  margin-top: -80px;
+  margin-bottom: 80px;
+  color: #fff;
+  font-size: 100px;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.699);
 }
 
 .blocks {
@@ -71,14 +87,14 @@ nav a:hover {
   max-width: 1920px; */
   margin: auto;
   overflow: none;
-  height: 100%;
+  min-height: 100vh;
 }
 
 /* About */
 .ab-heading {
   text-align: center;
   /* max-height: 270px; */
-  height: 25vh;
+  height: 20vh;
   background-image: url("../img/welcome.png");
   background-repeat: no-repeat;
   background-position: left bottom;
@@ -105,11 +121,11 @@ nav a:hover {
 
 .ab-content {
   /* max-height: 540px; */
-  height: 75vh;
+  min-height: 100vh;
 }
 
 .ab-content .text {
-  width: ;
+  /* width: ; */
   line-height: 2;
   font-weight: 400;
 }
@@ -120,7 +136,7 @@ nav a:hover {
 
 .left-content {
   position: relative;
-  height: 100%;
+  /* height: 100%; */
 }
 .ab-content img {
   max-height: 570px;
@@ -140,29 +156,7 @@ nav a:hover {
   background-position: left top;
 }
 
-.ab-footer .container,
-.ab-footer .row {
-  position: relative;
-  height: 100%;
-}
 
-.ab-footer .num {
-  font-weight: 600;
-  font-size: 56px;
-  font-family: "Montserrat";
-  height: 70px;
-  /* letter-spacing: 1px; */
-}
-.ab-footer .num span {
-  font-weight: normal;
-}
-
-.ab-footer .sub-text {
-  font-weight: 300;
-  font-family: "Roboto";
-  line-height: 1.3;
-  font-size: 18px;
-}
 
 /* Uzbekistan */
 .uz-top {
@@ -181,6 +175,7 @@ nav a:hover {
   font-weight: 700;
   text-transform: uppercase;
   font-size: 56px;
+  text-align: center;
 }
 
 .uz-top h2 {
@@ -189,16 +184,41 @@ nav a:hover {
   text-transform: uppercase;
   font-size: 32px;
   margin-top: -38px;
+  text-align: center;
 }
 
 .uz-content {
   /* max-height: 810px; */
-  height: 80vh;
+  min-height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .uz-content .inner {
+  width: 50%;
   position: relative;
   height: 80vh;
+  padding-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+
+}
+
+.uz-content .uz-photo{
+  width: 50%;
+
 }
 
 .uz-content .inner hr {
@@ -214,10 +234,11 @@ nav a:hover {
   text-align: justify;
   width: 80%;
   margin: 20px auto;
+  margin-top: 0;
 }
 .uz-content .inner .mybtn {
   display: block;
-  margin: auto;
+  margin: 0 auto;
   text-transform: uppercase;
   border-color: #52ac62 !important;
   color: #52ac62;
@@ -225,6 +246,8 @@ nav a:hover {
   width: 230px;
   letter-spacing: 1px;
   font-size: 12px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 .uz-content .inner .mybtn:hover {
@@ -240,7 +263,7 @@ nav a:hover {
 
 /* Additional info */
 .add-info {
-  background-image: url("../img/uzbekistan_background.png");
+  background-image: url("../img/uzbekistan_background.jpg");
   background-repeat: no-repeat;
   background-position: left top;
   background-size: cover;
@@ -250,9 +273,16 @@ nav a:hover {
   height: 30vh;
   max-width: 1920px;
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 0 110px;
 }
 
@@ -297,7 +327,7 @@ nav a:hover {
 .tr-content .cards {
   width: 100%;
   position: relative;
-  margin-top: 8%;
+  margin-top: 5%;
   /* background-color: #fff; */
 }
 .tr-content .cards .row {
@@ -310,24 +340,99 @@ nav a:hover {
 .tr-content .my-card {
   /* max-height: 320px; */
   padding: 0 15px !important;
-  max-height: 370px;
-  margin: auto;
-  background: url("../img/dev.jpg") rgba(0, 0, 0, 0.56);
-  background-size: cover;
-  background-blend-mode: multiply;
+  /* max-height: 420px; */
+  /* background: url("../img/dev.jpg") rgba(0, 0, 0, 0.56); */
+  
   color: #fff;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   z-index: 2;
-  max-width: 270px;
+  max-width: 370px;
   min-width: 190px;
+  margin: 0 10px;
 }
-.tr-content .my-card:hover {
+.tr-content .essen {
+  background: url("../img/essen.jpg") rgba(0, 0, 0, 0.56);
+  background-position: 50% ;
+  background-size: cover;
+  background-blend-mode: multiply;
+
+}
+.tr-content .essen:hover {
+  background: url("../img/essen.jpg") rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-blend-mode: multiply;
+  -webkit-transform: scale(1.01);
+      -ms-transform: scale(1.01);
+          transform: scale(1.01);
+  z-index: 5;
+  -webkit-box-shadow: 0 0 10px 0px rgb(63, 63, 63);
+          box-shadow: 0 0 10px 0px rgb(63, 63, 63);
+  background-position: 50% ;
+
+}
+.tr-content .kultur {
+  background: url("../img/dev.jpg") rgba(0, 0, 0, 0.56);
+  background-position: 50% ;
+  background-size: cover;
+  background-blend-mode: multiply;
+
+}
+.tr-content .kultur:hover {
   background: url("../img/dev.jpg") rgba(0, 0, 0, 0.1);
   background-size: cover;
   background-blend-mode: multiply;
-  transform: scale(1.01);
+  -webkit-transform: scale(1.01);
+      -ms-transform: scale(1.01);
+          transform: scale(1.01);
   z-index: 5;
-  box-shadow: 0 0 10px 0px rgb(63, 63, 63);
+  -webkit-box-shadow: 0 0 10px 0px rgb(63, 63, 63);
+          box-shadow: 0 0 10px 0px rgb(63, 63, 63);
+  background-position: 50% ;
+
+}
+.tr-content .visum {
+  background: url("../img/visum.jpg") rgba(0, 0, 0, 0.56);
+  background-position: 50% ;
+  background-size: cover;
+  background-blend-mode: multiply;
+
+}
+.tr-content .visum:hover {
+  background: url("../img/visum.jpg") rgba(0, 0, 0, 0.1);
+  background-position: 50%;
+
+  background-size: cover;
+  background-blend-mode: multiply;
+  -webkit-transform: scale(1.01);
+      -ms-transform: scale(1.01);
+          transform: scale(1.01);
+  z-index: 5;
+  -webkit-box-shadow: 0 0 10px 0px rgb(63, 63, 63);
+          box-shadow: 0 0 10px 0px rgb(63, 63, 63);
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+.tr-content .transport {
+  background: url("../img/transport.jpg") rgba(0, 0, 0, 0.56);
+  background-position: 50% ;
+  background-size: cover;
+  background-blend-mode: multiply;
+
+}
+.tr-content .transport:hover {
+  background: url("../img/transport.jpg") rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-blend-mode: multiply;
+  -webkit-transform: scale(1.01);
+      -ms-transform: scale(1.01);
+          transform: scale(1.01);
+  z-index: 5;
+  -webkit-box-shadow: 0 0 10px 0px rgb(63, 63, 63);
+          box-shadow: 0 0 10px 0px rgb(63, 63, 63);
+  background-position: 50% ;
+
 }
 .tr-content .my-card .logo-card {
   display: block;
@@ -335,6 +440,7 @@ nav a:hover {
   padding: 25px 0;
   font-size: 24px;
   padding-bottom: 15px;
+  color: #fff;
 }
 .tr-content .my-card .heading {
   display: block;
@@ -351,7 +457,6 @@ nav a:hover {
   font-family: Montserrat;
   font-weight: normal;
   padding-bottom: 30px;
-  overflow: none;
 }
 .tr-content .my-card .more {
   display: block;
@@ -422,9 +527,12 @@ nav a:hover {
   max-height: 540px;
   min-width: 270px;
   padding: 15px;
-  box-shadow: 0 0 20px #000;
+  -webkit-box-shadow: 0 0 20px #000;
+          box-shadow: 0 0 20px #000;
   color: #fff;
   position: relative;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   max-width: 390px;
 }
@@ -489,11 +597,15 @@ nav a:hover {
   font-size: 12px;
   font-family: Montserrat;
   letter-spacing: 1px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   color: #fff;
   bottom: 20px;
   left: 50%;
-  transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+      -ms-transform: translate(-50%);
+          transform: translate(-50%);
 }
 
 .tour-card .tour-more:hover {
@@ -504,37 +616,37 @@ nav a:hover {
 }
 
 .tour-main .classic {
-  background: url("../img/classic.png") rgba(0, 0, 0, 0.2);
+  background: url("../img/classic.jpg") rgba(0, 0, 0, 0.2);
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: multiply;
 }
 .tour-main .silver {
-  background: url("../img/silver.png") rgba(0, 0, 0, 0.2);
+  background: url("../img/silver.jpg") rgba(0, 0, 0, 0.2);
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: multiply;
 }
 .tour-main .gold {
-  background: url("../img/gold.png") rgba(0, 0, 0, 0.2);
+  background: url("../img/gold.jpg") rgba(0, 0, 0, 0.2);
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: multiply;
 }
 .tour-main .classic:hover {
-  background: url("../img/classic.png") rgba(0, 0, 0, 0);
+  background: url("../img/classic.jpg") rgba(0, 0, 0, 0);
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: multiply;
 }
 .tour-main .silver:hover {
-  background: url("../img/silver.png") rgba(0, 0, 0, 0);
+  background: url("../img/silver.jpg") rgba(0, 0, 0, 0);
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: multiply;
 }
 .tour-main .gold:hover {
-  background: url("../img/gold.png") rgba(0, 0, 0, 0.1);
+  background: url("../img/gold.jpg") rgba(0, 0, 0, 0.1);
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: multiply;
@@ -543,70 +655,13 @@ nav a:hover {
 /* contact us */
 .contact-page {
   height: 100vh;
-  background-image: url("../img/bg1-1.png");
+  /* background-image: url("../img/bg1_1.png");
   background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.contact-main {
-  height: 100vh;
-  background-color: #fff;
-}
-
-.con-top .text-shadow1 {
-  color: #000;
-  opacity: 0.2;
-  font-family: Montserrat;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 56px;
-}
-
-.con-top h2 {
-  font-family: "Playfair Display";
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 32px;
-  margin-top: -38px;
-}
-
-.contact {
-  height: 45px;
-  width: 100%;
-  margin-bottom: 15px;
-  border: 1px solid #afc3c9;
-  box-sizing: border-box;
-  border-radius: 30px;
-  padding-left: 15px;
-}
-.contact:focus {
-  outline: none;
-}
-.contact-textarea {
-  width: 100%;
-  margin-bottom: 15px;
-  border: 1px solid #afc3c9;
-  box-sizing: border-box;
-  border-radius: 30px;
-  padding-left: 20px;
-  padding-top: 10px;
-}
-.contact-textarea:focus {
-  outline: none;
-}
-label {
-  color: grey;
-  font-size: 18px;
+  background-repeat: no-repeat; */
 }
 
 
-/* Cities */
-
-.city-top {
-  height: 20vh;
-}
-
-.city-top .text-shadow1 {
+.contact-header .text-shadow1 {
   color: #000;
   opacity: 0.2;
   font-family: Montserrat;
@@ -616,29 +671,77 @@ label {
   margin: 0;
 }
 
-.city-top h2 {
+.contact-header h2 {
   font-family: "Playfair Display";
   font-weight: 700;
   text-transform: uppercase;
   font-size: 32px;
-  margin-top: -30px;
+  margin-top: -28px;
 }
 
-.city-main{
-  height: 80vh;
-  padding: 0 7%;
+.contact-header{
+  height: 20vh;
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.city-card{
+.contact-mail{
+  height: 30vh;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.city{
-  height: 35vh;
-  max-width: 220px;
+.contact-mail h3{
+  font-family: Montserrat;
+  font-weight: 600;
   margin-bottom: 30px;
-  background-color: #aaa;
 }
 
+.contact-mail .form-inline{
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+}
+.contact-mail .form-inline input{
+  width:38%;
+  padding: 26px;
+  font-size: 18px;
+}
+.contact-mail .form-inline button{
+  padding: 14px;
+  font-size: 16px;
+  width: 20%;
+}
+
+
+
+footer{
+  height: 50vh;
+}
 
 
 
@@ -646,15 +749,30 @@ label {
   .myNav {
     padding: 16px 0;
   }
+  .header h1{
+    font-size: 40px;
+  }
+
+  #top {
+    background: url("../img/image.jpg") rgba(0, 0, 0, 0.05);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 40%;
+  }
+
+  
+
+
 
   .ab-footer {
     display: none;
   }
   .ab-content {
-    height: 85vh;
+    height: 90vh;
   }
   .ab-heading {
-    height: 15vh;
+    height: 10vh;
   }
   .ab-heading .text-shadow1 {
     font-size: 28px;
@@ -668,44 +786,68 @@ label {
     font-size: 36px;
     height: 50px;
   }
-  .ab-footer .sub-text {
-    font-size: 14px;
-  }
 
   .ab-content .text {
-    font-size: 12px;
+    font-size: 10px;
+    line-height: 1.5;
+    padding: 0;
+  }
+  .ab-content img {
+    width: 180px;
+    margin-bottom: 10px;
   }
 
   /* UZBTOP */
+
+  .uzb{
+    min-height: 100vh;
+
+  }
+
   .uz-top {
-    height: 15vh;
+    height: 10vh;
   }
 
   .uz-top .text-shadow1 {
-    font-size: 22px;
-    text-align: center;
-    margin: 0;
+    display: none;
   }
 
   .uz-top h2 {
-    font-size: 18px;
-    margin-top: -14px;
+    font-size: 14px;
+    margin: 0;
   }
 
   .uz-content img {
-    height: 100%;
+
     max-width: 600px;
-    width: 100%;
+    width: 250px;
+    height: 230px;
+    margin: auto;
+    margin-top: 10px;
   }
   .uz-content {
-    max-height: 810px;
-    height: 85vh;
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
+
+  .uz-content .inner{
+    width: 100%;
+    height: auto;
+  }
+  .uz-content .uz-photo{
+    width: 100%;
+  }
+  
   .uz-content .inner .text {
-    font-size: 12px;
+    font-size: 9px;
     line-height: 1.7em;
-    padding: 10px 20px;
+    padding: 5px 5px;
     text-align: justify;
+    /* margin: 10px 20px; */
+    /* width: 100%; */
   }
   .uz-content .inner .mybtn {
     width: 170px;
@@ -735,21 +877,26 @@ label {
 
   .tr-content {
     height: 85vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 2%;
   }
 
   .tr-content .bg-text {
-    font-size: 50px;
+    font-size: 40px;
   }
 
   .tr-content .my-card {
-    padding: 0 15px !important;
-    max-height: 220px;
-    margin: auto;
+    padding: 0 10px !important;
+    max-height: 240px;
+    margin: 0;
     max-width: 270px;
-    min-width: 120px;
-    margin-bottom: 20px;
+    min-width: 150px;
+    margin-bottom: 0;
     width: 170px !important;
   }
 
@@ -758,22 +905,23 @@ label {
   }
   .tr-content .cards .row {
     padding: 0;
+    margin: 0;
   }
 
   .tr-content .my-card .logo-card {
     display: block;
     text-align: center;
-    padding: 16px 0;
+    padding: 12px 0;
     font-size: 12px;
-    padding-bottom: 15px;
+    padding-bottom: 12px;
   }
   .tr-content .my-card .heading {
-    font-size: 14px;
+    font-size: 12px;
     padding-bottom: 8px;
   }
   .tr-content .my-card .text {
     font-size: 8px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
   }
   .tr-content .my-card .more {
     font-size: 8px;
@@ -809,6 +957,44 @@ label {
     height: 85vh;
     padding: 0 10%;
   }
+  .tour-main .classic {
+    background-color: #000;
+    background: url("../img/classic.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .tour-main .silver {
+    background-color: #000;
+    background: url("../img/silver.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .tour-main .gold {
+    background-color: #000;
+    background: url("../img/gold.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .tour-main .classic:hover {
+    background: url("../img/classic.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .tour-main .silver:hover {
+    background: url("../img/silver.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .tour-main .gold:hover {
+    background: url("../img/gold.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+
+
+
 
   .glider-next {
     right: -30px;
@@ -819,7 +1005,7 @@ label {
     right: auto;
   }
 
-  .con-top .text-shadow1 {
+  .contact-header .text-shadow1 {
     color: #000;
     opacity: 0.2;
     font-family: Montserrat;
@@ -829,67 +1015,297 @@ label {
     margin: 0;
   }
 
-  .con-top h2 {
+  .contact-header h2 {
     font-family: "Playfair Display";
     font-weight: 700;
     text-transform: uppercase;
     font-size: 24px;
     margin-top: -18px;
   }
+
+  .contact-header{
+    height: 10vh;
+    padding: 20px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  
+  .contact-mail{
+    height: 40vh;
+    background-color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  
+  .contact-mail h3{
+    font-family: Montserrat;
+    font-weight: 600;
+    margin-bottom: 30px;
+    font-size: 18px;
+  }
+  
+  .contact-mail .form-inline{
+    width: 80%;
+    flex-direction: column;
+  }
+  .contact-mail .form-inline input{
+    width:100%;
+    padding: 18px;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  .contact-mail .form-inline button{
+    padding: 8px;
+    font-size: 14px;
+    width: 50%;
+    margin: auto;
+  }
+  
+  
+  
+  footer{
+    height: auto;
+  }
+  footer iframe{
+    display: none;
+  }
+
+  .footer-distributed{
+    padding: 20px;
+    padding-top: 1px;
+  }
+
+  .city-main{
+    padding: 30px 10px!important;
+  }
+  
+  .city-card{
+    max-width: 200px;
+    max-height: 280px;
+    width: 40%!important;
+    background-color: #fff;
+    padding: 0;
+    margin-bottom: 20px!important;
+    -webkit-box-shadow: 0 0 10px #eee;
+            box-shadow: 0 0 10px #eee;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    margin-right: 10px;
+    position: relative;
+  }
+
+  .city-card a{
+    position: absolute;
+    width: 100%;
+    padding: 10px 0!important;
+    text-align: center;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.719);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px!important;
+    -webkit-transition: 0.2s all ease-in-out;
+    -o-transition: 0.2s all ease-in-out;
+    transition: 0.2s all ease-in-out;
+    font-weight: bold;
+  }
+  .city-card:hover a{
+    padding: 20px!important;
+    text-decoration: none;
+  }
+
+  .city-header h1{
+    font-family: serif;
+    font-size: 24px!important;
+    font-weight: bold;
+    margin-top: -24px!important;
+    font-family: "Playfair Display";
+  
+  }
+  .city-header .tx-bg{
+    margin-top: 18px!important;
+    font-size: 36px!important;
+    font-family: Montserrat;
+    color: #000;
+    opacity: 0.2;
+    margin: 0;
+  }
+  
 }
 
-/* contact  us */
 
-.contacts a {
-  color: grey;
-  font-size: 25px;
-  text-decoration: none;
-  font-weight: 400;
+/* CITY */
+
+.city-header{
+  height: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: url('../img/bg1_1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  color: #000;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-.contacts a:hover {
-  text-decoration: none;
-  color: grey;
+.city-header h1{
+  font-family: serif;
+  font-size: 38px;
+  font-weight: bold;
+  margin-top: -32px;
+  font-family: "Playfair Display";
+
+}
+.city-header .tx-bg{
+  font-size: 52px;
+  font-family: Montserrat;
+  color: #000;
+  opacity: 0.2;
+  margin: 0;
 }
 
-.fas {
-  color: grey;
-  font-size: 18px;
-  padding-right: 10px;
+
+.city-main{
+  min-height: 85vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding:  100px 50px;
 }
 
-.social {
+.city-card{
+  max-width: 320px;
+  max-height: 280px;
+  width: 80%;
+  background-color: #fff;
+  padding: 0;
+  margin-bottom: 50px;
+  -webkit-box-shadow: 0 0 10px #eee;
+          box-shadow: 0 0 10px #eee;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  margin-right: 10px;
+  position: relative;
+}
+.city-card:hover{
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.336);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.336);
+}
+
+.city-card img{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.city-card a{
+  display: block;
+  position: absolute;
+  width: 100%;
+  padding: 20px 0;
   text-align: center;
-  padding-top: 55px;
-  font-size: 30px;
-  color: grey;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.719);
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 24px;
+  -webkit-transition: 0.2s all ease-in-out;
+  -o-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+  font-weight: bold;
 }
 
-.social-icon {
-  text-align: center;
-  font-size: 25px;
+.city-card:hover a{
+  padding: 45px;
+  text-decoration: none;
 }
 
-.social-icon i {
-  padding-right: 10px;
-  color: grey;
-}
+
+
+
+
+
+
+
 
 #ScrollTop {
+  z-index: 10;
   position: fixed;
   bottom: 40px;
   right: 40px;
   font-size: 22px;
   width: 50px;
   height: 50px;
-  background: #afc3c9;
-  color: rgba(255, 255, 255, 1);
+  background-color: rgba(0, 0, 0, 0.1);
   border: none;
   cursor: pointer;
   border-radius: 30px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid #fff;
+}
+
+#ScrollTop:hover{
+  background-color: #fff;
+  text-decoration: none;
+}
+#ScrollTop:hover i{
+  color: #333;
 }
 #ScrollTop:focus {
   outline: none;
 }
 #ScrollTop i {
-  padding-left: 10px;
+  padding-left: 15px;
+  color: rgba(255, 255, 255, 1);
 }
+

@@ -10,14 +10,7 @@ body{
     /* background: #E5E5E5; */
 }
 
-.brand {
-    font-size: 32px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 900;
-    color: #fff;
-    width: 100px;
-  }
-
+ 
 
 .container{
     max-width: 1110px;
@@ -27,22 +20,22 @@ body{
 
 .header{
     height: 100vh;
-    background-image: url('../img/uzbekistan_background.png');
+    background-image: url('../img/uzbekistan_background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    max-height: 1080px;
 }
 
 .header .logo{
     display: block;
-    font-weight: 900;
-    font-size: 30px;
-    line-height: 35px;
-    color: #FFFFFF;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding-top: 50px;
-    transition: all 0.3s;
+    padding-top: 30px;
+}
+
+.header .logo img{
+    width: 150px;
+    display: block;
+    padding-top: 10px;
 }
 .header .logo:hover{
     color: #f6f6f6;
@@ -60,20 +53,12 @@ body{
     color: #fff;
     font-family: Roboto;
     font-weight: 900;
-    font-size: 80px;
+    font-size: 55px;
     line-height: 94px;
     margin-bottom: 10px;
     text-transform: uppercase;
 }
 
-.header-main p{
-    font-family: Roboto;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 150%;
-    color: #FFFFFF;
-    width: 392px;
-}
 
 .header-main .text-bg{
     position: absolute;
@@ -143,7 +128,7 @@ body{
 
 .main{
     display: flex;
-    margin-top: -15%;
+    margin-top: -10%;
     z-index: 1;
     position: relative;
     margin-bottom: 100px;
@@ -342,4 +327,210 @@ body{
 .right-links .link:hover{
     background-color: #e7e7e7;
     color: rgb(22, 22, 22);
+}
+
+
+
+@media (max-width: 600px) {
+    
+    .header{
+        height: 40vh;
+    }
+
+    .header .logo{
+        display: block;
+        padding-top: 10px;
+        /* margin-left: 10px; */
+        width: 100px;
+        margin: 0 auto;
+    }
+    .header .logo img{
+        width: 100px;
+        display: block;
+        padding-top: 10px;
+    }
+    
+    .header-main{
+        margin-top: 35px;
+        border-left: 5px solid #ABFFC7;
+        padding-left: 10px;
+        position: relative;
+        margin-bottom: 35px;
+        margin-left: 10px;
+    }
+    
+    .header-main h1{
+        color: #fff;
+        font-family: Roboto;
+        font-weight: 900;
+        font-size: 28px;
+        line-height: 35px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
+    
+    .tour-points{
+        display: none;
+        flex-wrap: wrap;
+    }
+    
+    .main{
+        margin-top: -10%;
+        flex-direction: column;
+    }
+
+    .left{
+        flex:1;
+        margin-bottom: 30px;
+    }
+
+    .left-header{
+        height: 80px;
+        display: flex;
+        width: 100%;
+        border-bottom: 1px solid #E7E7E7;
+    }
+    
+    .header-section{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-right: 1px solid #e7e7e7;
+        padding: 10px;
+    }
+    .header-section:nth-of-type(3){
+        border-right: none;
+    }
+    
+    .header-section .icon{
+        font-size: 14px;
+        color: #5DA988;
+    }
+    
+    .header-content{
+        margin-left: 10px;
+        color: #5DA988;
+    }
+    .header-content h3{
+        font-size: 12px;
+    }
+    
+    .header-content .sub{
+        margin-top: 5px;
+        color:#909090;
+        font-size: 10px;
+    }
+    
+    
+    
+    .left-text{
+        margin: 20px 15px;
+        font-size: 12px;
+        line-height: 200%;
+        text-align: justify;
+    }
+    
+    .day{
+        margin: 0 10px;
+        margin-bottom: 32px;
+    }
+    
+    .day-header{
+        background: linear-gradient(45deg, #5ea887, #70C186, #4f886d);
+        padding: 16px 24px;
+        font-size: 16px;
+        font-weight: 500;
+        color: #fff;
+        border-radius: 2px;
+    }
+    
+    .day-icon{
+        margin-bottom: 20px;
+        font-weight: 500;
+        color: #5EA887;
+    }
+    
+    .day-main{
+        padding: 15px;
+        font-size: 14px;
+    }
+    
+    .day-text{
+        text-align: justify;
+        font-size: 12px;
+        line-height: 200%;
+    }
+
+
+    .right{
+        flex:1;
+        margin: 0 30px;
+    }
+    
+    .right-header{
+        text-align: center;
+        padding: 20px 0;
+        margin-bottom: 32px;
+        background-color: #fff;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 3px;
+    }
+    
+    .right-header h4{
+        color: #5DA988;
+    }
+    .right-header h2{
+        font-weight: 900;
+        font-size: 24px;
+    }
+    
+    .right-main{
+        background-color: #fff;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 3px;
+    }
+    
+    .right-top{
+        text-align: center;
+        padding: 22px 0;
+        padding-bottom: 0;
+        font-weight: 900;
+        font-size: 20px;
+        color: #5DA988;
+        border-bottom: 1px solid #E7E7E7;
+    }
+    
+    .right-top::after{
+        content: '';
+        display: block;
+        height: 3px;
+        width: 35px;
+        background-color: #5DA988;
+        margin: auto;
+        margin-top: 22px;
+    }
+    
+    .right-links{
+        margin: 20px 20px;
+        padding-bottom: 41px;
+    }
+    
+    .right-links .link{
+        display: block;
+        color: #5C5C5C;
+        padding: 15px 15px;
+        border-bottom: 1px solid #e7e7e7;
+        text-decoration: none;
+        transition: all 0.3s;
+        border-radius: 3px;
+    }
+    .right-links .link:nth-of-type(9){
+        border: none;
+    }
+    
+    .right-links .link:hover{
+        background-color: #e7e7e7;
+        color: rgb(22, 22, 22);
+    }
 }

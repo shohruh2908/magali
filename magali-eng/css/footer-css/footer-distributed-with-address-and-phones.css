@@ -77,6 +77,7 @@
 .footer-distributed .footer-center i.fa-envelope{
 	font-size: 17px;
 	line-height: 38px;
+	/* margin: auto; */
 }
 
 .footer-distributed .footer-center p{
@@ -140,6 +141,19 @@
 
 	margin-right: 3px;
 	margin-bottom: 5px;
+}
+
+.footer-icons a{
+    color: #ddd;
+    transition: all 0.2s ease;
+}
+
+.footer-icons i{
+    color: #aaa;
+}
+
+.footer-icons a:hover i{
+    color: #fff;
 }
 
 /* If you don't want the footer to be responsive, remove these media queries */
