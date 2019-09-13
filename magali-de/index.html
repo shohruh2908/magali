@@ -704,7 +704,11 @@
                     </div>
                     <div class="contact-mail">
                         <h3> Anfrage hinterlassen </h3>
-                        <form class="form-inline" method="post" action="tg.php">
+                        <form
+                            class="form-inline"
+                            method="post"
+                            action="mail.php"
+                        >
                             <input
                                 type="text"
                                 class="form-control"
@@ -717,6 +721,12 @@
                                 placeholder="Ihre E-Mail-Adresse"
                                 name="email"
                             />
+                            <textarea
+                                name="text"
+                                class="form-control"
+                                id="text"
+                                placeholder="Enter your text here..."
+                            ></textarea>
 
                             <button
                                 type="submit"
@@ -832,6 +842,32 @@
                         },
                         1000
                     );
+                });
+            });
+        </script>
+        <script>
+            // Отправка данных на сервер
+            $('#form').trigger('reset');
+            $(function() {
+                'use strict';
+                $('#form').on('submit', function(e) {
+                    e.preventDefault();
+                    $.ajax({
+                        url: 'send.php',
+                        type: 'POST',
+                        contentType: false,
+                        processData: false,
+                        data: new FormData(this),
+                        success: function(msg) {
+                            console.log(msg);
+                            if (msg == 'ok') {
+                                alert('Сообщение отправлено');
+                                $('#form').trigger('reset'); // очистка формы
+                            } else {
+                                alert('Ошибка');
+                            }
+                        }
+                    });
                 });
             });
         </script>
